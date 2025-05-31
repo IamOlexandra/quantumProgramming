@@ -1,14 +1,24 @@
 .header {
   display: flex;
   background-color: #ffb8ca;
+  align-items: center; /* Центрирует элементы по вертикали */
+  justify-content: space-between;
 }
 .logo-link {
 }
 .header-logo {
+  display: flex;
 }
 .header-list {
+  display: flex;
+  gap: 30px;
 }
 .header-item {
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Регулируйте расстояние между элементами */
 }
 .header-link {
   list-style: none;
@@ -18,4 +28,13 @@
   color: white;
 }
 .header-btn {
+  display: flex;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  color: $axent;
+  background-color: #fff;
+  padding: 7px 36px;
+  border-radius: 22px;
+  border: none;
 }

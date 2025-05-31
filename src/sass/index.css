@@ -1,6 +1,57 @@
+@charset "UTF-8";
+body * {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, div, body, a, button, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (min-width: 1199px) {
+  .container {
+    width: 1119px;
+  }
+}
+
 .header {
   display: flex;
   background-color: #ffb8ca;
+  align-items: center; /* Центрирует элементы по вертикали */
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+}
+
+.header-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Регулируйте расстояние между элементами */
 }
 
 .header-link {
@@ -9,4 +60,16 @@
   font-weight: 700;
   font-size: 16px;
   color: white;
+}
+
+.header-btn {
+  display: flex;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  color: #d41443;
+  background-color: #fff;
+  padding: 7px 36px;
+  border-radius: 22px;
+  border: none;
 }/*# sourceMappingURL=index.css.map */
