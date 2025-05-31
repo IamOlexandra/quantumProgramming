@@ -1,1 +1,265 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Page title</title><link rel="stylesheet" href="/quantumProgramming/index.569a4d11.css"><script type="module" src="/quantumProgramming/index.cdc84ddc.js"></script><script src="/quantumProgramming/index.6c2642bc.js" nomodule="" defer></script></head><body> <h1>Example title</h1>  <div> <h1>sdfgbn</h1> </div> <article class="example" id="uk"> <h1>HTML-partials</h1>  <img src="/quantumProgramming/logo.268195b3.png" alt="" width="320"> <p> The <a href="https://github.com/posthtml/posthtml-include" target="_blank" rel="noopener noreferrer"> posthtml-include </a> plugin allows you to add code from other HTML files (fragments) to HTML page files. Fragments are stored in the <code>src/partials</code> folder. The addition occurs when compiling page files, such as <code>index.html</code>. </p> <p> This <code>example.html</code> file is an example of such a snippet, with the markup of a certain part of the main page. This is very convenient for team development on student projects, when several people write in one HTML file at once. </p> <p> The syntax for adding a fragment to the main file is: <code> &lt;include src="./partials/filename.html"&gt;&lt;/include&gt;</code> </p> <div class="background"></div> </article> </body></html>
+<!DOCTYPE html><html lang=ru><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Page title</title><link rel=stylesheet href=/quantumProgramming/quantumProgramming.05b51164.css><script type=module src=/quantumProgramming/quantumProgramming.4efa029d.js></script><body>
+    <header class=header>
+  <div class=container>
+    <a href=/ class=logo-link>
+      <img src=/quantumProgramming/logo.405060a1.svg alt class=header-logo>
+    </a>
+    <ul class=header-list>
+      <li class=header-item><a class=header-link>Home</a></li>
+      <li class=header-item><a class=header-link>About us</a></li>
+      <li class=header-item>
+        <a class=header-link>How it’s made? </a>
+      </li>
+      <li class=header-item>
+        <a class=header-link>Our products </a>
+      </li>
+      <li class=header-item><a class=header-link>Contact</a></li>
+    </ul>
+    <button class=header-btn type=button>Buy now</button>
+  </div>
+</header>
+
+    <section class=hero>
+  <div class=container>
+    <h1 class=hero-title>
+      ice cream made with <span class=passion>passion</span>
+    </h1>
+    <ul class=hero-list>
+      <li class=hero-item>
+        <p class=hero-number>16</p>
+        <p class=hero-text>cafes</p>
+      </li>
+      <li class=hero-item>
+        <p class=hero-number>23</p>
+        <p class=hero-text>food trucks</p>
+      </li>
+    </ul>
+    <ul class=hero-button-list>
+      <li class=hero-button-item>
+        <button type=button>Products</button>
+      </li>
+      <li class=hero-button-item>
+        <button type=button>Products</button>
+      </li>
+    </ul>
+    <img class=hero-image-icecream src=/quantumProgramming/hero-icecream.266001c2.png>
+    <img class=hero-image-girl src=/quantumProgramming/hero-girl.3c51aab9.png>
+    <div class=hero-div-milk>
+      <p>
+        Lorem ipsum dolor sit amet, <br>
+        consectetur adipiscing elit, <br>
+        sed do eiusmod tempor <br>
+        incididunt ut labore et
+      </p>
+
+      <img class=hero-image-milk src=/quantumProgramming/hero-milk.5506af06.png>
+    </div>
+  </div>
+</section>
+
+    <section class=product>
+  <div class=container>
+    <h2 class=product-natural-title>
+      100% natural <span class=pink-text>products</span>
+    </h2>
+    <ul class=products-list>
+      <li class=products-item>
+        <img class=products-image src=/quantumProgramming/product1.7f25367d.png>
+        <h3 class=products-title>ice cream</h3>
+        <p class=dots>...</p>
+        <p class=products-text>
+          Lorem ipsum dolor sit amet, <br>
+          consectetur adipiscing elit, <br>
+          sed do eiusmod tempor <br>
+          incididunt ut labore et
+        </p>
+        <button type=button></button>
+      </li>
+      <li class=products-item>
+        <img class=products-image src=/quantumProgramming/product2.5884c65a.png>
+        <h3 class=products-title>ice cream</h3>
+        <p class=dots>...</p>
+        <p class=products-text>
+          Lorem ipsum dolor sit amet, <br>
+          consectetur adipiscing elit, <br>
+          sed do eiusmod tempor <br>
+          incididunt ut labore et
+        </p>
+        <button type=button></button>
+      </li>
+      <li class=products-item>
+        <img class=products-image src=/quantumProgramming/product3.413706f1.png>
+        <h3 class=products-title>ice cream</h3>
+        <p class=dots>...</p>
+        <p class=products-text>
+          Lorem ipsum dolor sit amet, <br>
+          consectetur adipiscing elit, <br>
+          sed do eiusmod tempor <br>
+          incididunt ut labore et
+        </p>
+        <button type=button></button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class=cow>
+  <div class=container>
+    <h3 class=cow-subtitle>tradition and love</h3>
+    <h2 class=cow-title>how it’s made?</h2>
+    <div class=cow-wrap>
+      <picture>
+        <source srcset="/quantumProgramming/cow-cow.1dabd84e.png 1x,/quantumProgramming/cow-cow@2x.1f984cf6.png 2x" type=image/png>
+        <img src=/quantumProgramming/cow-cow.1dabd84e.png alt=Cow>
+      </picture>
+      <div class=cow-info>
+        <p class="cow-bold cow-text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class=cow-text>
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p class=cow-text>Aliquam erat volutpat. Aenean accumsan.</p>
+        <button type=button class=cow-button>Read more</button>
+      </div>
+    </div>
+    <ul class=cow-list>
+      <li class=cow-item>
+        <picture class=cow-icon>
+          <source srcset="/quantumProgramming/cow-icon1.1acfcc84.png 1x,/quantumProgramming/cow-icon1@2x.09a9a367.png 2x" type=image/png>
+          <img src=/quantumProgramming/cow-icon1.1acfcc84.png alt="Icon of cow">
+        </picture>
+        <h4 class=cow-number>721</h4>
+        <p class=cow-fact>
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li class=cow-item>
+        <picture class=cow-icon>
+          <source srcset="/quantumProgramming/cow-icon2.a30cc3a0.png 1x,/quantumProgramming/cow-icon2@2x.047a6bfe.png 2x" type=image/png>
+          <img src=/quantumProgramming/cow-icon2.a30cc3a0.png alt="Icon of apples">
+        </picture>
+        <h4 class=cow-number>16kg</h4>
+        <p class=cow-fact>
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li class=cow-item>
+        <picture class=cow-icon>
+          <source srcset="/quantumProgramming/cow-icon3.ea70f4f4.png 1x,/quantumProgramming/cow-icon3@2x.9b17276a.png 2x" type=image/png>
+          <img src=/quantumProgramming/cow-icon3.ea70f4f4.png alt="Icon of heart">
+        </picture>
+        <h4 class=cow-number>84</h4>
+        <p class=cow-fact>
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class=gallery>
+    
+</section>
+    <section class="container reviwes">
+  <ul class=reviwes-list>
+    <li class=reviwes-item>
+      <picture class=reviwes-pfp>
+        <source srcset="/quantumProgramming/reviews-pfp1.ba93671c.png 1x,/quantumProgramming/reviews-pfp1@2x.b2efb065.png 2x" type=image/png>
+        <img src=/quantumProgramming/reviews-pfp1.ba93671c.png alt="Icon of cow">
+      </picture>
+      <p class=reviwes-text>
+        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
+        in nibh vel risus.
+      </p>
+      <svg class=reviwes-group><use href=/quantumProgramming/symbol-defs.c5b0f01c.svg#icon-reviwes-group /></svg>
+      <p class=reviwes-info>Emily, Los Angeles</p>
+      <ul class=reviwes-svgs>
+        <li class=reviwes-svgs-item>
+          <svg class=reviwes-icon><use href=/quantumProgramming/symbol-defs.c5b0f01c.svg#icon-reviwes-home /></svg>
+        </li>
+        <li class=reviwes-svgs-item>
+          <svg class=reviwes-icon><use href=/quantumProgramming/symbol-defs.c5b0f01c.svg#icon-reviwes-circle /></svg>
+        </li>
+        <li class=reviwes-svgs-item>
+          <svg class=reviwes-icon><use href=/quantumProgramming/symbol-defs.c5b0f01c.svg#icon-reviwes-circle /></svg>
+        </li>
+      </ul>
+    </li>
+    <li class=reviwes-item>
+      <picture class=reviwes-pfp>
+        <source srcset="/quantumProgramming/reviews-pfp2.607fddea.png 1x,/quantumProgramming/reviews-pfp2@2x.b80d873d.png 2x" type=image/png>
+        <img src=/quantumProgramming/reviews-pfp2.607fddea.png alt="Icon of cow">
+      </picture>
+      <p class=reviwes-text>
+        In dictum leo ante, egestas posuere sem rhoncus elementum. Sed dictum
+        interdum sodales. Aliquam erat volutpat. Nunc hendrerit lectus vel erat
+        tempor.
+      </p>
+      <svg class=reviwes-group><use href=/quantumProgramming/symbol-defs.c5b0f01c.svg#icon-reviwes-group /></svg>
+      <p class=reviwes-info>Olivia, Los Angeles</p>
+      <ul class=reviwes-svgs>
+        <li class=reviwes-svgs-item>
+          <svg class=reviwes-icon><use href=/quantumProgramming/symbol-defs.c5b0f01c.svg#icon-reviwes-circle /></svg>
+        </li>
+        <li class=reviwes-svgs-item>
+          <svg class=reviwes-icon><use href=/quantumProgramming/symbol-defs.c5b0f01c.svg#icon-reviwes-home /></svg>
+        </li>
+        <li class=reviwes-svgs-item>
+          <svg class=reviwes-icon><use href=/quantumProgramming/symbol-defs.c5b0f01c.svg#icon-reviwes-circle /></svg>
+        </li>
+      </ul>
+    </li>
+    <li class=reviwes-item>
+      <picture class=reviwes-pfp>
+        <source srcset="/quantumProgramming/reviews-pfp3.3df1d636.png 1x,/quantumProgramming/reviews-pfp3@2x.2cfa9c93.png 2x" type=image/png>
+        <img src=/quantumProgramming/reviews-pfp3.3df1d636.png alt="Icon of cow">
+      </picture>
+      <p class=reviwes-text>
+        Ut nec diam feugiat velit porttitor congue. Aenean volutpat ante sed
+        ullamcorper dictum. Nam commodo tristique turpis, quis egestas nibh
+        aliquet accumsan. Fusce ipsum nunc.
+      </p>
+      <svg class=reviwes-group><use href=/quantumProgramming/symbol-defs.c5b0f01c.svg#icon-reviwes-group /></svg>
+      <p class=reviwes-info>Ava, New York</p>
+      <ul class=reviwes-svgs>
+        <li class=reviwes-svgs-item>
+          <svg class=reviwes-icon><use href=/quantumProgramming/symbol-defs.c5b0f01c.svg#icon-reviwes-circle /></svg>
+        </li>
+        <li class=reviwes-svgs-item>
+          <svg class=reviwes-icon><use href=/quantumProgramming/symbol-defs.c5b0f01c.svg#icon-reviwes-circle /></svg>
+        </li>
+        <li class=reviwes-svgs-item>
+          <svg class=reviwes-icon><use href=/quantumProgramming/symbol-defs.c5b0f01c.svg#icon-reviwes-home /></svg>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+    <section class=locations></section>
+
+    <footer>
+  <div>
+    <div>
+      <h4>HOMEMADE ICE CREAM MADE</h4>
+      <h2>WITH PASSION</h2>
+    </div>
+    <a><img src=/quantumProgramming/arrow.b939ef63.png alt=Github></a>
+    <a><img src=/quantumProgramming/arrow.b939ef63.png alt=Telegram></a>
+    <a><img src=/quantumProgramming/arrow.b939ef63.png alt=Facebook></a>
+    <div>
+      <p>Feel free to contact:<a>+61(0) 383 766 284</a></p>
+    </div>
+  </div>
+  <p>© 2019 – IceCream. All Rights Reserved.</p>
+</footer>
+
+  
+
