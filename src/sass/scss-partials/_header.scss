@@ -1,22 +1,21 @@
-.header{
-    display: flex;
-    background-color: #FFB8CA;
+.header {
+  display: flex;
+  background-color: #ffb8ca;
 }
 .logo-link {
 }
 .header-logo {
 }
-.header-list { 
-       font-family: "DM Sans";
-font-weight: 700;
-font-size: 16px;
-color: white;
+.header-list {
 }
 .header-item {
-
-
 }
 .header-link {
+  list-style: none;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
 }
 .header-btn {
 }

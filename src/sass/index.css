@@ -1,9 +1,10 @@
 .header {
   display: flex;
-  background-color: #FFB8CA;
+  background-color: #ffb8ca;
 }
 
-.header-list {
+.header-link {
+  list-style: none;
   font-family: "DM Sans";
   font-weight: 700;
   font-size: 16px;
