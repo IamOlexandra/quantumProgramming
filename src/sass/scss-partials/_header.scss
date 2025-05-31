@@ -8,12 +8,15 @@
 }
 .header-logo {
   display: flex;
+  padding-right: 110px;
+  padding-top: 37px;
 }
 .header-list {
   display: flex;
   gap: 30px;
 }
 .header-item {
+  padding-top: 50px;
 }
 .header-nav {
   display: flex;
@@ -37,4 +40,9 @@
   padding: 7px 36px;
   border-radius: 22px;
   border: none;
+  margin-left: 110px;
+  margin-top: 38px;
+}
+.header-container {
+  display: flex;
 }

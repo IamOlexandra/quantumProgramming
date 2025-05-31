@@ -41,11 +41,17 @@ a {
 
 .header-logo {
   display: flex;
+  padding-right: 110px;
+  padding-top: 37px;
 }
 
 .header-list {
   display: flex;
   gap: 30px;
+}
+
+.header-item {
+  padding-top: 50px;
 }
 
 .header-nav {
@@ -72,4 +78,87 @@ a {
   padding: 7px 36px;
   border-radius: 22px;
   border: none;
+  margin-left: 110px;
+  margin-top: 38px;
+}
+
+.header-container {
+  display: flex;
+}
+
+.hero {
+  display: flex;
+  background-color: #ffb8ca;
+}
+
+.hero-title {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  color: white;
+}
+
+.passion {
+  color: #d41443;
+}
+
+.hero-list {
+  display: flex;
+}
+
+.hero-number {
+  display: flex;
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  color: #d41443;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: white;
+}
+
+.hero-button-list {
+  display: flex;
+}
+
+.hero-button-item {
+  display: flex;
+}
+
+.hero-button {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  color: #d41443;
+  border: none;
+  border-radius: 22px;
+  padding: 15px 36px;
+}
+
+.hero-milk-text {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: white;
 }/*# sourceMappingURL=index.css.map */
