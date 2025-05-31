@@ -1,0 +1,31 @@
+$main: #fff;
+$main-hover: #ecebeb;
+$axent: #d41443;
+$axent-hover: #c7133e;
+$background-first: #ffb8ca;
+$background-second: #fff5f6;
+$background-third: #fff5f6;
+$text-first: #000;
+$text-second: #907e82;
+$product-second: #f0d1a5;
+$product-third: #c2e297;
+$mobile-menu: #e17992;
+
+body * {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, p, div, body, a, button, ul, li {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
