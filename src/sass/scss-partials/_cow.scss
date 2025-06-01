@@ -1,0 +1,93 @@
+.cow {
+    background-color: $background-second;
+    padding-top: 125px;
+    padding-bottom: 139px;
+    &-subtitle {
+        font-family: "Titan One", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 4%;
+        text-align: center;
+        text-transform: uppercase;
+        color: $subtitles;
+        margin-bottom: 15px;
+    }
+    &-title {
+        font-family: "Titan One", sans-serif;
+        font-weight: 400;
+        font-size: 34px;
+        letter-spacing: 6%;
+        text-align: center;
+        text-transform: uppercase;
+        color: $axent;
+        margin-bottom: 26px;
+    }
+    &-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    &-cow {
+        width: 280px;
+        margin-bottom: 40px;
+    }
+    &-info {
+        width: 220px;
+    }
+    &-text {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 162%;
+        color: $text-second;
+        margin-bottom: 19px;
+        &:first-child {
+            margin-bottom: 30px;
+        }
+        &:last-child {
+            margin-bottom: 17px;
+        }
+    }
+    &-bold {
+        color: $text-first;
+    }
+    &-button {
+        display: flex;
+        padding: 12px 56px 12px 37px;
+        font-family: "DM Sans" sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        background-color: white;
+        border: none;
+        border-radius: 22px;
+        cursor: pointer;
+        background-image: url(../images/button-arrow.svg);
+        background-repeat: no-repeat;
+        background-position-x: 134px;
+        background-position-y: center;
+        margin-bottom: 39px;
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+    }
+    &-icon {
+        height: 50px;
+        margin-bottom: 16px;
+    }
+    &-number {
+        font-family: "Titan One", sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        letter-spacing: 4%;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &-fact {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 170%;
+    }
+}

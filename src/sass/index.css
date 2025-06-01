@@ -1,3 +1,36 @@
+body * {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, div, body, a, button, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (min-width: 1199px) {
+  .container {
+    width: 1119px;
+  }
+}
+
 .header {
   display: flex;
   background-color: #ffb8ca;
@@ -9,4 +42,98 @@
   font-weight: 700;
   font-size: 16px;
   color: white;
+}
+
+.cow {
+  background-color: #fff5f6;
+  padding-top: 125px;
+  padding-bottom: 139px;
+}
+.cow-subtitle {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+}
+.cow-title {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 6%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 26px;
+}
+.cow-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.cow-cow {
+  width: 280px;
+  margin-bottom: 40px;
+}
+.cow-info {
+  width: 220px;
+}
+.cow-text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+  margin-bottom: 19px;
+}
+.cow-text:first-child {
+  margin-bottom: 30px;
+}
+.cow-text:last-child {
+  margin-bottom: 17px;
+}
+.cow-bold {
+  color: #000;
+}
+.cow-button {
+  display: flex;
+  padding: 12px 56px 12px 37px;
+  font-family: "DM Sans" sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: white;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  background-image: url(../images/button-arrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: 134px;
+  background-position-y: center;
+  margin-bottom: 39px;
+}
+.cow-list {
+  display: flex;
+  flex-direction: column;
+}
+.cow-icon {
+  height: 50px;
+  margin-bottom: 16px;
+}
+.cow-number {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.cow-fact {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
 }/*# sourceMappingURL=index.css.map */
