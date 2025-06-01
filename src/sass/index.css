@@ -161,4 +161,74 @@ a {
   line-height: 140%;
   letter-spacing: 0%;
   color: white;
+}
+
+.product-natural-title {
+  margin-top: 127px;
+  margin-bottom: 49px;
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffb8ca;
+}
+
+.pink-text {
+  color: #d41443;
+}
+
+.products-list {
+  display: flex;
+  justify-content: center;
+}
+
+.products-item {
+  width: 329px;
+  height: 525px;
+  border-radius: 24px;
+  margin-right: 27px;
+  text-align: center;
+  position: relative;
+}
+
+.products-item:nth-child(1) {
+  background-color: #ffb8ca;
+}
+
+.products-item:nth-child(2) {
+  background-color: #f0d1a5;
+}
+
+.products-item:nth-child(3) {
+  background-color: #c2e297;
+}
+
+.products-title {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.dots {
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.products-text {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  text-align: center;
+  color: white;
 }/*# sourceMappingURL=index.css.map */
