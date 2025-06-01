@@ -6,12 +6,20 @@
 .hero-title {
   font-family: 'Titan One';
   font-weight: 400;
-  font-size: 38px;
+  font-size: 26px;
   line-height: 100%;
   letter-spacing: 4%;
   text-transform: uppercase;
-
   color: white;
+  padding-bottom: 18px;
+  @media (min-width: 1199px) {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+  }
 }
 .passion {
   color: $axent;
@@ -22,24 +30,30 @@
 .hero-item {
 }
 .hero-number {
-  display: flex;
-  font-family: 'Titan One';
-  font-weight: 400;
-  font-size: 46px;
-  line-height: 100%;
-  letter-spacing: 4%;
-  color: $axent;
-  text-align: right;
-  text-transform: uppercase;
+  display: none;
+  @media (min-width: 1199px) {
+    display: flex;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    color: $axent;
+    text-align: right;
+    text-transform: uppercase;
+  }
 }
 .hero-text {
-  font-family: 'DM Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: right;
-  color: white;
+  display: none;
+  @media (min-width: 1199px) {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: white;
+  }
 }
 .hero-button-list {
   display: flex;
@@ -50,16 +64,29 @@
 .hero-button {
   font-family: 'DM Sans';
   font-weight: 400;
-  font-size: 14px;
+  font-size: 8px;
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
   background-color: white;
   color: $axent;
-  border: none;
-  border-radius: 22px;
-  padding: 15px 36px;
+    border: none;
+    border-radius: 22px;
+    padding: 7px 15px;
+
+  @media (min-width: 1199px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    color: $axent;
+  
+    padding: 15px 36px;
+  }
 }
 .hero-image-icecream {
 }
