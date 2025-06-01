@@ -8,12 +8,21 @@
 }
 .header-logo {
   display: flex;
-  padding-right: 110px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 137px;
+  
+  @media (min-width: 1199px) {
+    padding-right: 110px;
   padding-top: 37px;
 }
+}
 .header-list {
+display: none;
+  @media (min-width: 1199px) {
   display: flex;
   gap: 30px;
+}
 }
 .header-item {
   padding-top: 50px;
@@ -21,9 +30,10 @@
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 30px; /* Регулируйте расстояние между элементами */
+  gap: 30px; 
 }
 .header-link {
+  
   list-style: none;
   font-family: 'DM Sans';
   font-weight: 700;
@@ -31,7 +41,10 @@
   color: white;
 }
 .header-btn {
-  display: flex;
+ display: none;
+
+  @media (min-width: 1199px) {
+    display: flex;
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 16px;
@@ -42,6 +55,7 @@
   border: none;
   margin-left: 110px;
   margin-top: 38px;
+}
 }
 .header-container {
   display: flex;

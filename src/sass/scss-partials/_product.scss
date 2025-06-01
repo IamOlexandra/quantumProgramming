@@ -1,10 +1,20 @@
 .product {
-    
 }
 
-.product-natural-title { 
-     margin-top: 127px;
- margin-bottom: 49px;
+.product-natural-title {
+    font-family: "Titan One";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+   
+    
+
+  color: $background-first;
+  @media (min-width: 1199px) {
+    margin-top: 127px;
+  margin-bottom: 260px;
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 30px;
@@ -12,37 +22,45 @@
   letter-spacing: 4%;
   text-align: center;
   text-transform: uppercase;
-  color: $background-first;
- 
+}
 }
 .pink-text {
   color: $axent;
-
 }
 .products-list {
-    display: flex;
+  display: flex;
   justify-content: center;
 }
-.products-item {
-  width: 329px;
-  height: 525px;
+.product-wrap {
   border-radius: 24px;
   margin-right: 27px;
   text-align: center;
-  position: relative;
+  padding: 163px 75px 50px;
 }
-.products-item:nth-child(1) {
+.product-wrap:nth-child(1) {
   background-color: $background-first;
-  
 }
-.products-item:nth-child(2) {
+.product-wrap:nth-child(2) {
   background-color: $product-second;
 }
-.products-item:nth-child(3) {
+.product-wrap:nth-child(3) {
   background-color: $product-third;
 }
 .products-image {
-    
+  position: absolute;
+  top: -263px;
+}
+.products-item:nth-child(1) {
+  position: relative;
+  
+}
+.products-item:nth-child(2) {
+  position: relative;
+}
+.products-item:nth-child(3) {
+  position: relative;
+}
+.products-item {
 }
 .products-title {
   font-family: 'Titan One';
@@ -53,14 +71,11 @@
   text-align: center;
   text-transform: uppercase;
   color: white;
-
-  
 }
 .dots {
-    display: block;
+  display: block;
   font-size: 20px;
   color: #ffffff;
-  
 }
 .products-text {
   font-family: 'DM Sans';
@@ -70,8 +85,6 @@
   letter-spacing: 4%;
   text-align: center;
   color: white;
-  
 }
-.product-btn{
- 
+.product-btn {
 }
