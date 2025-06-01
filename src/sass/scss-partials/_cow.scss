@@ -2,6 +2,18 @@
     background-color: $background-second;
     padding-top: 125px;
     padding-bottom: 139px;
+    background-image: url(../images/cow-bg.png);
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url("../images/cow-bg@2x.png");
+    }
+    background-repeat: no-repeat;
+    background-position-y: 776px;
+    background-position-x: center;
+    background-size: 320px;
+
     &-subtitle {
         font-family: "Titan One", sans-serif;
         font-weight: 400;
@@ -29,6 +41,7 @@
     &-cow {
         width: 280px;
         margin-bottom: 40px;
+        
     }
     &-info {
         width: 220px;
@@ -39,12 +52,9 @@
         font-size: 12px;
         line-height: 162%;
         color: $text-second;
-        margin-bottom: 19px;
+        margin-bottom: 17px;
         &:first-child {
             margin-bottom: 30px;
-        }
-        &:last-child {
-            margin-bottom: 17px;
         }
     }
     &-bold {
@@ -67,10 +77,14 @@
         background-position-x: 134px;
         background-position-y: center;
         margin-bottom: 39px;
+        color: $axent;
     }
     &-list {
         display: flex;
         flex-direction: column;
+    }
+    &-item {
+        margin-bottom: 38px;
     }
     &-icon {
         height: 50px;
@@ -83,6 +97,7 @@
         letter-spacing: 4%;
         text-transform: uppercase;
         margin-bottom: 15px;
+        color: $axent;
     }
     &-fact {
         font-family: "DM Sans", sans-serif;

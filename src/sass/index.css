@@ -48,6 +48,16 @@ a {
   background-color: #fff5f6;
   padding-top: 125px;
   padding-bottom: 139px;
+  background-image: url(../images/cow-bg.png);
+  background-repeat: no-repeat;
+  background-position-y: 776px;
+  background-position-x: center;
+  background-size: 320px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .cow {
+    background-image: url("../images/cow-bg@2x.png");
+  }
 }
 .cow-subtitle {
   font-family: "Titan One", sans-serif;
@@ -86,13 +96,10 @@ a {
   font-size: 12px;
   line-height: 162%;
   color: #907e82;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 }
 .cow-text:first-child {
   margin-bottom: 30px;
-}
-.cow-text:last-child {
-  margin-bottom: 17px;
 }
 .cow-bold {
   color: #000;
@@ -114,10 +121,14 @@ a {
   background-position-x: 134px;
   background-position-y: center;
   margin-bottom: 39px;
+  color: #d41443;
 }
 .cow-list {
   display: flex;
   flex-direction: column;
+}
+.cow-item {
+  margin-bottom: 38px;
 }
 .cow-icon {
   height: 50px;
@@ -130,6 +141,7 @@ a {
   letter-spacing: 4%;
   text-transform: uppercase;
   margin-bottom: 15px;
+  color: #d41443;
 }
 .cow-fact {
   font-family: "DM Sans", sans-serif;
