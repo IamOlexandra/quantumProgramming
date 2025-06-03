@@ -45,6 +45,8 @@
     }
     &-info {
         width: 220px;
+        margin: 0 auto;
+        padding: 4px;
     }
     &-text {
         font-family: "DM Sans", sans-serif;
@@ -78,6 +80,10 @@
         background-position-y: center;
         margin-bottom: 39px;
         color: $axent;
+        transition: background-color 300ms ease;
+        &:hover, &:focus {
+            background-color: $main-hover;
+        }
     }
     &-list {
         display: flex;
