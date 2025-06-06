@@ -1,6 +1,10 @@
 .reviwes {
     padding-top: 80px;
     padding-bottom: 86px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 121px;
+        padding-bottom: 119px;
+    }
     
     &-hidden {
         display: none;
@@ -9,10 +13,13 @@
         display: block;
         margin: 0 auto;
         margin-bottom: 29px;
+        @media (min-width: 768px) and (max-width: 1199px) {
+            margin-bottom: 19px;
+        }
     }
     &-text {
         padding: 43px 62px 26px 62px;
-        background-image: url(../images/reviews-bg3.png);
+        background-image: url("../images/reviews-bg3.png");
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -26,6 +33,20 @@
         text-align: center;
         background-repeat: no-repeat;
         margin-bottom: 12px;
+        @media (min-width: 768px) and (max-width: 1199px) {
+            padding: 47px 80px 34px 80px;
+            background-image: url("../images/reviews-bg2.png");
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url("../images/reviews-bg2@2x.png");
+            }
+            font-size: 14px;
+            line-height: 216%;
+            letter-spacing: 4%;
+            margin-bottom: 10px;
+        }
     }
     &-group {
         display: block;
@@ -33,6 +54,9 @@
         height: 40px;
         width: 32px;
         margin: 0 auto;
+        @media (min-width: 768px) and (max-width: 1199px) {
+            height: 32px;
+        }
     }
     &-group use {
         display: block;
@@ -45,6 +69,10 @@
         letter-spacing: 0%;
         text-align: center;
         margin-bottom: 30px;
+        @media (min-width: 768px) and (max-width: 1199px) {
+            font-size: 16px;
+            margin-bottom: 35px;
+        }
     }
     &-svgs {
         width: 72px;
