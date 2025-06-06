@@ -205,6 +205,10 @@ a {
   }
 }
 
+.hero-image-girl {
+  display: none;
+}
+
 .hero-milk-text {
   font-family: "DM Sans";
   font-weight: 400;
