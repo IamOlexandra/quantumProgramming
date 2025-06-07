@@ -500,6 +500,19 @@ a {
   }
 }
 
+.section {
+  height: 100px;
+  background-image: url(../images/gallery.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  max-width: 90%;
+  max-height: 90%;
+}
+
 .reviwes {
   padding-top: 80px;
   padding-bottom: 86px;
@@ -611,4 +624,83 @@ a {
 }
 .reviwes-button:hover .reviwes-home, .reviwes-button:focus .reviwes-icon {
   fill: #c7133e;
+}
+
+.footer {
+  background-color: #fff5f6;
+  padding: 100px 20px 30px;
+  font-family: "DM Sans", sans-serif;
+  position: relative;
+}
+
+.footer-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.footer-subtitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.footer-socials {
+  list-style: none;
+  padding: 0;
+  margin: 130px 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-contact {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.footer-phone {
+  color: #d41443;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #888;
+  margin-top: 20px;
 }/*# sourceMappingURL=index.css.map */
