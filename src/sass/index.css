@@ -316,12 +316,12 @@ a {
 .cow {
   background-color: #fff5f6;
   padding-top: 125px;
-  padding-bottom: 140px;
+  padding-bottom: 139px;
   background-image: url(../images/cow-bg.png);
   background-repeat: no-repeat;
   background-position-y: 776px;
   background-position-x: center;
-  background-size: 320px;
+  background-size: 100% auto;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .cow {
@@ -332,6 +332,11 @@ a {
   .cow {
     padding-top: 130px;
     background-image: none;
+  }
+}
+@media (min-width: 1199px) {
+  .cow {
+    background-position-y: 342px;
   }
 }
 .cow-subtitle {
@@ -347,6 +352,11 @@ a {
 @media (min-width: 768px) and (max-width: 1199px) {
   .cow-subtitle {
     font-size: 26px;
+  }
+}
+@media (min-width: 1199px) {
+  .cow-subtitle {
+    font-size: 30px;
   }
 }
 .cow-title {
@@ -365,6 +375,12 @@ a {
     margin-bottom: 50px;
   }
 }
+@media (min-width: 1199px) {
+  .cow-title {
+    font-size: 58px;
+    margin-bottom: 55px;
+  }
+}
 .cow-wrap {
   display: flex;
   flex-direction: column;
@@ -376,6 +392,11 @@ a {
     margin-bottom: 66px;
   }
 }
+@media (min-width: 1199px) {
+  .cow-wrap {
+    margin-bottom: 39px;
+  }
+}
 .cow-cow {
   width: 280px;
   margin-bottom: 40px;
@@ -384,6 +405,11 @@ a {
   .cow-cow {
     width: 340px;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1199px) {
+  .cow-cow {
+    width: 516px;
   }
 }
 .cow-info {
@@ -405,17 +431,39 @@ a {
   color: #907e82;
   margin-bottom: 17px;
 }
-.cow-text:first-child {
-  margin-bottom: 30px;
-}
 @media (min-width: 768px) and (max-width: 1199px) {
   .cow-text {
     font-size: 14px;
     line-height: 176%;
   }
 }
+@media (min-width: 1199px) {
+  .cow-text {
+    margin-bottom: 35px;
+    line-height: 194%;
+  }
+}
+.cow-text:first-child {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .cow-text:first-child {
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1199px) {
+  .cow-text:first-child {
+    margin-bottom: 35px;
+  }
+}
 .cow-bold {
   color: #000;
+}
+@media (min-width: 1199px) {
+  .cow-bold {
+    font-size: 16px;
+    line-height: 176%;
+  }
 }
 .cow-button {
   display: flex;
@@ -445,6 +493,11 @@ a {
     margin-top: 62px;
   }
 }
+@media (min-width: 1199px) {
+  .cow-button {
+    margin-top: 45px;
+  }
+}
 .cow-list {
   display: flex;
   flex-direction: column;
@@ -462,6 +515,12 @@ a {
     width: 180px;
     margin-right: 60px;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1199px) {
+  .cow-item {
+    width: 330px;
+    margin-right: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {

@@ -1,7 +1,7 @@
 .cow {
     background-color: $background-second;
     padding-top: 125px;
-    padding-bottom: 140px;
+    padding-bottom: 139px;
     background-image: url(../images/cow-bg.png);
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -12,10 +12,13 @@
     background-repeat: no-repeat;
     background-position-y: 776px;
     background-position-x: center;
-    background-size: 320px;
+    background-size: 100% auto;
     @media (min-width: 768px) and (max-width: 1199px) {
         padding-top: 130px;
         background-image: none;
+    }
+    @media (min-width: 1199px) {
+        background-position-y: 342px;
     }
 
     &-subtitle {
@@ -29,6 +32,9 @@
         margin-bottom: 15px;
         @media (min-width: 768px) and (max-width: 1199px) {
             font-size: 26px;
+        }
+        @media (min-width: 1199px) {
+            font-size: 30px;
         }
     }
     &-title {
@@ -44,6 +50,10 @@
             font-size: 48px;
             margin-bottom: 50px;
         }
+        @media (min-width: 1199px) {
+            font-size: 58px;
+            margin-bottom: 55px;
+        }
     }
     &-wrap {
         display: flex;
@@ -53,6 +63,9 @@
             justify-content: space-between;
             margin-bottom: 66px;
         }
+        @media (min-width: 1199px) {
+            margin-bottom: 39px;
+        }
     }
     &-cow {
         width: 280px;
@@ -60,6 +73,9 @@
         @media (min-width: 768px) and (max-width: 1199px) {
             width: 340px;
             margin-bottom: 0;
+        }
+        @media (min-width: 1199px) {
+            width: 516px;
         }
     }
     &-info {
@@ -78,16 +94,30 @@
         line-height: 162%;
         color: $text-second;
         margin-bottom: 17px;
-        &:first-child {
-            margin-bottom: 30px;
-        }
         @media (min-width: 768px) and (max-width: 1199px) {
             font-size: 14px;
             line-height: 176%;
         }
+        @media (min-width: 1199px) {
+            margin-bottom: 35px;
+            line-height: 194%;
+        }
+        &:first-child {
+            margin-bottom: 30px;
+            @media (min-width: 768px) and (max-width: 1199px) {
+                margin-bottom: 35px;
+            }
+            @media (min-width: 1199px) {
+                margin-bottom: 35px;
+            }
+        }
     }
     &-bold {
         color: $text-first;
+        @media (min-width: 1199px) {
+            font-size: 16px;
+            line-height: 176%;
+        }
     }
     &-button {
         display: flex;
@@ -114,6 +144,9 @@
         @media (min-width: 768px) and (max-width: 1199px) {
             margin-top: 62px;
         }
+        @media (min-width: 1199px) {
+            margin-top: 45px;
+        }
     }
     &-list {
         display: flex;
@@ -128,6 +161,10 @@
             width: 180px;
             margin-right: 60px;
             margin-bottom: 0;
+        }
+        @media (min-width: 1199px) {
+            width: 330px;
+            margin-right: 20px;
         }
         &:last-child {
             @media (min-width: 768px) and (max-width: 1199px) {
