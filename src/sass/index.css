@@ -257,15 +257,15 @@ a {
   padding: 163px 75px 50px;
 }
 
-.product-wrap:nth-child(1) {
+.products-item:nth-child(1) {
   background-color: #ffb8ca;
 }
 
-.product-wrap:nth-child(2) {
+.products-item:nth-child(2) {
   background-color: #f0d1a5;
 }
 
-.product-wrap:nth-child(3) {
+.products-item:nth-child(3) {
   background-color: #c2e297;
 }
 
