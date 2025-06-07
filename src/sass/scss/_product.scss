@@ -8,7 +8,6 @@
   line-height: 100%;
   letter-spacing: 4%;
   text-transform: uppercase;
-
   color: $background-first;
   @media (min-width: 1199px) {
     margin-top: 127px;
@@ -35,15 +34,14 @@
   margin-right: 27px;
   text-align: center;
   padding: 163px 75px 50px;
-  
 }
-.product-wrap:nth-child(1) {
+.products-item:nth-child(1) {
   background-color: $background-first;
 }
-.product-wrap:nth-child(2) {
+.products-item:nth-child(2) {
   background-color: $product-second;
 }
-.product-wrap:nth-child(3) {
+.products-item:nth-child(3) {
   background-color: $product-third;
 }
 .products-image {
