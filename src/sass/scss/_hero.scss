@@ -27,8 +27,6 @@
 .hero-list {
   display: flex;
 }
-.hero-item {
-}
 .hero-number {
   display: none;
   @media (min-width: 1199px) {
@@ -71,9 +69,9 @@
   vertical-align: middle;
   background-color: white;
   color: $axent;
-    border: none;
-    border-radius: 22px;
-    padding: 7px 15px;
+  border: none;
+  border-radius: 22px;
+  padding: 7px 15px;
 
   @media (min-width: 1199px) {
     font-weight: 400;
@@ -84,19 +82,15 @@
     vertical-align: middle;
     background-color: white;
     color: $axent;
-  
+
     padding: 15px 36px;
   }
 }
-.hero-image-icecream {
-}
+
 .hero-image-girl {
-    display: none;
+  display: none;
 }
-.hero-div-milk {
-}
-.hero-image-milk {
-}
+
 .hero-milk-text {
   font-family: 'DM Sans';
   font-weight: 400;
