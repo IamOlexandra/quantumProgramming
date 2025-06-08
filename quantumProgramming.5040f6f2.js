@@ -1,0 +1,2 @@
+var currentVisible=0,intervalId=setInterval(autoSlider,3e3);function moveSlider(e){document.getElementsByClassName("reviwes-item")[currentVisible].classList.remove("reviwes-visible"),document.getElementsByClassName("reviwes-item")[e].classList.add("reviwes-visible"),currentVisible=e}function clickSlider(e){clearInterval(intervalId),moveSlider(e)}function autoSlider(){var e=currentVisible+1;e>2&&(e=0),moveSlider(e)}
+//# sourceMappingURL=quantumProgramming.5040f6f2.js.map
