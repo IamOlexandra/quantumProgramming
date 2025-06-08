@@ -1,3 +1,12 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  outline: 2px solid black ;
+}
 .footer {
   background-color: #fff5f6;
   padding: 100px 20px 30px;
