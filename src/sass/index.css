@@ -317,7 +317,7 @@ a {
   background-color: #fff5f6;
   padding-top: 125px;
   padding-bottom: 139px;
-  background-image: url(../images/cow-bg.png);
+  background-image: url("../images/cow-bg.png");
   background-repeat: no-repeat;
   background-position-y: 776px;
   background-position-x: center;
@@ -349,7 +349,7 @@ a {
   color: #ffa5ba;
   margin-bottom: 15px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-subtitle {
     font-size: 26px;
   }
@@ -369,7 +369,7 @@ a {
   color: #d41443;
   margin-bottom: 26px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-title {
     font-size: 48px;
     margin-bottom: 50px;
@@ -385,7 +385,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-wrap {
     flex-direction: row;
     justify-content: space-between;
@@ -401,7 +401,7 @@ a {
   width: 280px;
   margin-bottom: 40px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-cow {
     width: 340px;
     margin-bottom: 0;
@@ -416,11 +416,16 @@ a {
   width: 220px;
   margin: 0 auto;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-info {
     width: 340px;
     margin: 0;
     margin-top: 50px;
+  }
+}
+@media (min-width: 1199px) {
+  .cow-info {
+    width: 463px;
   }
 }
 .cow-text {
@@ -431,7 +436,7 @@ a {
   color: #907e82;
   margin-bottom: 17px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-text {
     font-size: 14px;
     line-height: 176%;
@@ -446,7 +451,7 @@ a {
 .cow-text:first-child {
   margin-bottom: 30px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-text:first-child {
     margin-bottom: 35px;
   }
@@ -488,7 +493,7 @@ a {
 .cow-button:hover, .cow-button:focus {
   background-color: #ecebeb;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-button {
     margin-top: 62px;
   }
@@ -496,13 +501,14 @@ a {
 @media (min-width: 1199px) {
   .cow-button {
     margin-top: 45px;
+    font-size: 16px;
   }
 }
 .cow-list {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-list {
     flex-direction: row;
   }
@@ -510,7 +516,7 @@ a {
 .cow-item {
   margin-bottom: 38px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-item {
     width: 180px;
     margin-right: 60px;
@@ -523,7 +529,7 @@ a {
     margin-right: 20px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-item:last-child {
     margin-right: 0;
   }
@@ -531,6 +537,16 @@ a {
 .cow-icon {
   height: 50px;
   margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .cow-icon {
+    margin-bottom: 36px;
+  }
+}
+@media (min-width: 1199px) {
+  .cow-icon {
+    margin-bottom: 40px;
+  }
 }
 .cow-number {
   font-family: "Titan One", sans-serif;
@@ -541,9 +557,14 @@ a {
   margin-bottom: 15px;
   color: #d41443;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-number {
     font-size: 48px;
+  }
+}
+@media (min-width: 1199px) {
+  .cow-number {
+    font-size: 58px;
   }
 }
 .cow-fact {
@@ -552,10 +573,16 @@ a {
   font-size: 12px;
   line-height: 170%;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .cow-fact {
     font-size: 14px;
     line-height: 174%;
+  }
+}
+@media (min-width: 1199px) {
+  .cow-fact {
+    font-size: 16px;
+    line-height: 176%;
   }
 }
 
@@ -576,23 +603,37 @@ a {
   padding-top: 80px;
   padding-bottom: 86px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .reviwes {
     padding-top: 121px;
     padding-bottom: 119px;
   }
 }
-.reviwes-hidden {
+@media (min-width: 1199px) {
+  .reviwes {
+    padding-top: 123px;
+    padding-bottom: 132px;
+  }
+}
+.reviwes-item {
   display: none;
+}
+.reviwes-visible {
+  display: block;
 }
 .reviwes-pfp {
   display: block;
   margin: 0 auto;
   margin-bottom: 29px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .reviwes-pfp {
     margin-bottom: 19px;
+  }
+}
+@media (min-width: 1199px) {
+  .reviwes-pfp {
+    margin-bottom: 15px;
   }
 }
 .reviwes-text {
@@ -611,7 +652,7 @@ a {
     background-image: url("../images/reviews-bg3@2x.png");
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .reviwes-text {
     padding: 47px 80px 34px 80px;
     background-image: url("../images/reviews-bg2.png");
@@ -621,9 +662,24 @@ a {
     margin-bottom: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .reviwes-text {
     background-image: url("../images/reviews-bg2@2x.png");
+  }
+}
+@media (min-width: 1199px) {
+  .reviwes-text {
+    padding: 47px 88px 39px 88px;
+    background-image: url("../images/reviews-bg.png");
+    font-size: 16px;
+    line-height: 186%;
+    width: 926px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1199px) and (min-device-pixel-ratio: 2), (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1199px) and (min-resolution: 192dpi), (min-width: 1199px) and (min-resolution: 2dppx) {
+  .reviwes-text {
+    background-image: url("../images/reviews-bg@2x.png");
   }
 }
 .reviwes-group {
@@ -633,9 +689,14 @@ a {
   width: 32px;
   margin: 0 auto;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .reviwes-group {
     height: 32px;
+  }
+}
+@media (min-width: 1199px) {
+  .reviwes-group {
+    height: 30px;
   }
 }
 .reviwes-group use {
@@ -650,10 +711,15 @@ a {
   text-align: center;
   margin-bottom: 30px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .reviwes-info {
     font-size: 16px;
     margin-bottom: 35px;
+  }
+}
+@media (min-width: 1199px) {
+  .reviwes-info {
+    font-size: 20px;
   }
 }
 .reviwes-svgs {
