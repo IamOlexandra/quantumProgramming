@@ -9,14 +9,14 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+}
+
+.footer-text {
   text-align: center;
+  position: relative;
 }
 
 .footer-subtitle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   font-family: 'Titan One', sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -28,10 +28,6 @@
 }
 
 .footer-title {
-  position: absolute;
-  top: 40px;
-  left: 0;
-  right: 0;
   font-family: 'Titan One', sans-serif;
   font-weight: 400;
   font-size: 58px;
@@ -39,14 +35,22 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #d41443;
+  margin-top: 10px;
+}
+
+.footer-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
 }
 
 .footer-socials {
   list-style: none;
   padding: 0;
-  margin: 130px 0 20px;
+  margin: 130px 0 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 20px;
 }
 
@@ -62,6 +66,7 @@
   letter-spacing: 0.02em;
   color: #000;
   margin-bottom: 20px;
+
 }
 
 .footer-phone {
@@ -72,7 +77,10 @@
 }
 
 .footer-copy {
+  text-align: center;
   font-size: 12px;
   color: #888;
-  margin-top: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #f1c6cd;
+  padding-top: 20px;
 }

@@ -1,0 +1,126 @@
+
+.location-section {
+  background-color: #fff5f6;
+  padding: 60px 0;
+}
+
+.location-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.location-block {
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px rgba(255, 165, 186, 0.25);
+  padding: 40px 30px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 482px;
+}
+
+.location-type {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  background-color: #f0d1a5;
+}
+
+.location-block:nth-child(2) .location-type {
+  background-color: #c2e297;
+}
+
+.location-city {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.text-info {
+  font-size: 14px;
+  color: #000;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.location-info {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 20px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #000;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.workdays-title,
+.weekend-title {
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.workdays-hours,
+.weekend-hours {
+  color: #d41443;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.contact {
+  font-size: 14px;
+  margin-top: auto;
+  color: #000;
+  opacity: 0.8;
+
+  a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+}
+
+.location-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 60px;
+}
+
+.btn-location,
+.btn-franchise {
+  padding: 12px 26px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-location {
+  background-color: #d41443;
+  color: #fff;
+}
+
+.btn-franchise {
+  background-color: #fff;
+  color: #d41443;
+  border: 1px solid #d41443;
+}
