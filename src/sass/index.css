@@ -247,7 +247,13 @@ a {
 
 .products-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+@media (min-width: 1199px) {
+  .products-list {
+    flex-direction: row;
+  }
 }
 
 .product-wrap {
