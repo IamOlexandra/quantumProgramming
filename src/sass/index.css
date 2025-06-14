@@ -700,7 +700,6 @@ a {
 }
 .reviwes-text {
   padding: 43px 62px 26px 62px;
-  background-image: url("../images/reviews-bg3.png");
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -708,6 +707,7 @@ a {
   text-align: center;
   background-repeat: no-repeat;
   margin-bottom: 12px;
+  background-image: url("../images/reviews-bg3.png");
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .reviwes-text {
@@ -717,11 +717,11 @@ a {
 @media (min-width: 768px) {
   .reviwes-text {
     padding: 47px 80px 34px 80px;
-    background-image: url("../images/reviews-bg2.png");
     font-size: 14px;
     line-height: 216%;
     letter-spacing: 4%;
     margin-bottom: 10px;
+    background-image: url("../images/reviews-bg2.png");
   }
 }
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
@@ -732,11 +732,11 @@ a {
 @media (min-width: 1199px) {
   .reviwes-text {
     padding: 47px 88px 39px 88px;
-    background-image: url("../images/reviews-bg.png");
     font-size: 16px;
     line-height: 186%;
     width: 926px;
     margin: 0 auto;
+    background-image: url("../images/reviews-bg.png");
   }
 }
 @media (min-width: 1199px) and (min-device-pixel-ratio: 2), (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1199px) and (min-resolution: 192dpi), (min-width: 1199px) and (min-resolution: 2dppx) {
