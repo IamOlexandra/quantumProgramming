@@ -1,20 +1,21 @@
 .footer {
-  font-family: 'DM Sans',sans-serif;
+  font-family: 'DM Sans', sans-serif;
   background-color: #fff5f6;
   padding: 100px 20px 30px;
-  font-family: 'DM Sans', sans-serif;
-  position: relative;
 }
 
 .footer-wrap {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .footer-text {
-  text-align: center;
-  position: relative;
+  max-width: 500px;
 }
 
 .footer-subtitle {
@@ -40,24 +41,23 @@
 }
 
 .footer-info {
-  position: absolute;
-  top: 0;
-  right: 0;
   text-align: right;
 }
 
 .footer-socials {
   list-style: none;
   padding: 0;
-  margin: 130px 0 10px;
+  margin: 0 0 10px;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
 }
 
-.footer-icon {
+.footer-social-link {
+  display: inline-block;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
 }
 
 .footer-contact {
@@ -66,7 +66,6 @@
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #000;
-  margin-bottom: 20px;
 }
 
 .footer-phone {
@@ -77,10 +76,11 @@
 }
 
 .footer-copy {
+  width: 100%;
   text-align: center;
   font-size: 12px;
   color: #888;
   margin-top: 40px;
-  border-top: 1px solid #f1c6cd;
+  border-top: 1px solid #E1E1E1;
   padding-top: 20px;
 }
