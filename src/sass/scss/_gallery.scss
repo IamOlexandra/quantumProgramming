@@ -1,22 +1,12 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  outline: 2px solid black ;
-}
 .section {
-    height: 100px;
-    background-image: url(../images/gallery.png);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-wrapper {
-    max-width: 90%;
-    max-height: 90%;
-  }
-  
+  height: 100px;
+  background-image: url(../images/gallery.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  max-width: 90%;
+  max-height: 90%;
+}
