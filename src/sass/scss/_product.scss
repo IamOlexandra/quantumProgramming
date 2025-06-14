@@ -4,25 +4,50 @@
 .product-natural-title {
   font-family: 'Titan One';
   font-weight: 400;
-  font-size: 26px;
+  font-size: 18px;
   line-height: 100%;
-  letter-spacing: 4%;
+  letter-spacing: 0%;
+  text-align: center;
   text-transform: uppercase;
+  
   color: $background-first;
   @media (min-width: 1199px) {
     margin-top: 127px;
     margin-bottom: 260px;
     font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: 4%;
-    text-align: center;
-    text-transform: uppercase;
+font-weight: 400;
+font-size: 30px;
+line-height: 100%;
+letter-spacing: 4%;
+text-align: center;
+text-transform: uppercase;
+
+
   }
 }
 .pink-text {
   color: $axent;
+  margin-bottom: 31px;
+  font-family: "Titan One";
+font-weight: 400;
+font-size: 34px;
+line-height: 100%;
+letter-spacing: 4%;
+text-align: center;
+text-transform: uppercase;
+
+  @media (min-width: 1199px) {
+    font-family: "Titan One";
+font-weight: 400;
+font-size: 58px;
+line-height: 100%;
+letter-spacing: 6%;
+text-align: center;
+text-transform: uppercase;
+
+
+
+  }
 }
 .products-list {
   display: flex;
@@ -61,6 +86,10 @@ flex-direction: column;
   position: relative;
 }
 .products-item {
+  display: flex;
+  border-radius: 24px;
+  margin-right: 24px;
+  
 }
 .products-title {
   font-family: 'Titan One';
