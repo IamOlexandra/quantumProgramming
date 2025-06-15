@@ -718,6 +718,14 @@ a {
 
 .gallery img {
   width: 100%;
+<<<<<<< HEAD
+}
+
+.gallery {
+  background: linear-gradient(to bottom, #fff5f6 0%, #ffffff 100%);
+  padding: 60px 0;
+=======
+>>>>>>> 969ddf2269c9f15659bd179f9571e9819cb073fa
 }
 
 .reviwes {
@@ -877,10 +885,21 @@ a {
 }
 
 .location-section {
+  font-family: "DM Sans", sans-serif;
   background-color: #fff5f6;
   padding: 60px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .location-wrapper {
+    justify-content: space-between;
+    gap: 0;
+  }
+  .location-block {
+    width: 100%;
+    max-width: 500px;
+  }
+}
 .location-wrapper {
   display: flex;
   justify-content: center;
@@ -997,6 +1016,8 @@ a {
   background-color: #fff;
   color: #D41342;
   border: 1px solid #D41342;
+<<<<<<< HEAD
+=======
 }
 
 @media screen and (max-width: 768px) {
@@ -1007,6 +1028,7 @@ a {
   .location-wrapper {
     justify-content: center;
   }
+>>>>>>> 969ddf2269c9f15659bd179f9571e9819cb073fa
 }
 .footer {
   font-family: "DM Sans", sans-serif;
