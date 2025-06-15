@@ -264,6 +264,13 @@ a {
   top: 80px;
   right: 32px;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero-image-icecream {
+    right: 247px;
+    top: 63px;
+  }
+}
+
 .product-natural-title {
   margin-top: 121px;
   margin-bottom: 144px;
