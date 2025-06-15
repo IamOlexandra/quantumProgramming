@@ -618,27 +618,8 @@ a {
   }
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+.gallery img {
   width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  outline: 2px solid black;
-}
-
-.section {
-  height: 100px;
-  background-image: url(../images/gallery.png);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-wrapper {
-  max-width: 90%;
-  max-height: 90%;
 }
 
 .reviwes {
@@ -793,6 +774,10 @@ a {
   fill: #c7133e;
 }
 
+.location {
+  font-family: "DM Sans", sans-serif;
+}
+
 .location-section {
   background-color: #fff5f6;
   padding: 60px 0;
@@ -871,7 +856,7 @@ a {
 
 .workdays-hours,
 .weekend-hours {
-  color: #d41443;
+  color: #D41342;
   font-weight: 500;
   margin-bottom: 12px;
 }
@@ -903,47 +888,46 @@ a {
   font-size: 14px;
   border-radius: 22px;
   border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .btn-location {
-  background-color: #d41443;
+  background-color: #D41342;
   color: #fff;
 }
 
 .btn-franchise {
   background-color: #fff;
-  color: #d41443;
-  border: 1px solid #d41443;
+  color: #D41342;
+  border: 1px solid #D41342;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  outline: 2px solid black;
+@media screen and (max-width: 768px) {
+  .location-block {
+    width: 100%;
+    max-width: 500px;
+  }
+  .location-wrapper {
+    justify-content: center;
+  }
 }
-
 .footer {
+  font-family: "DM Sans", sans-serif;
   background-color: #fff5f6;
   padding: 100px 20px 30px;
-  font-family: "DM Sans", sans-serif;
-  position: relative;
 }
 
 .footer-wrap {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .footer-text {
-  text-align: center;
-  position: relative;
+  max-width: 500px;
 }
 
 .footer-subtitle {
@@ -969,24 +953,23 @@ a {
 }
 
 .footer-info {
-  position: absolute;
-  top: 0;
-  right: 0;
   text-align: right;
 }
 
 .footer-socials {
   list-style: none;
   padding: 0;
-  margin: 130px 0 10px;
+  margin: 0 0 10px;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
 }
 
-.footer-icon {
+.footer-social-link {
+  display: inline-block;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
 }
 
 .footer-contact {
@@ -995,7 +978,6 @@ a {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #000;
-  margin-bottom: 20px;
 }
 
 .footer-phone {
@@ -1006,10 +988,11 @@ a {
 }
 
 .footer-copy {
+  width: 100%;
   text-align: center;
   font-size: 12px;
   color: #888;
   margin-top: 40px;
-  border-top: 1px solid #f1c6cd;
+  border-top: 1px solid #E1E1E1;
   padding-top: 20px;
 }/*# sourceMappingURL=index.css.map */
