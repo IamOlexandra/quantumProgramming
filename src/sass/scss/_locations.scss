@@ -1,9 +1,19 @@
-.location {
-  font-family: 'DM Sans', sans-serif;
-}
 .location-section {
+  font-family: 'DM Sans', sans-serif;
   background-color: #fff5f6;
   padding: 60px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .location-wrapper {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .location-block {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 
 .location-wrapper {
@@ -125,13 +135,3 @@
   border: 1px solid #D41342;
 }
 
-@media screen and (max-width: 768px) {
-  .location-block {
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .location-wrapper {
-    justify-content: center;
-  }
-}
