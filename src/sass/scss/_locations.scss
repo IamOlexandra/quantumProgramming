@@ -1,4 +1,4 @@
-.location{
+.location {
   font-family: 'DM Sans', sans-serif;
 }
 .location-section {
@@ -79,7 +79,7 @@
 
 .workdays-hours,
 .weekend-hours {
-  color: #d41443;
+  color: #D41342;
   font-weight: 500;
   margin-bottom: 12px;
 }
@@ -115,12 +115,23 @@
 }
 
 .btn-location {
-  background-color: #d41443;
+  background-color: #D41342;
   color: #fff;
 }
 
 .btn-franchise {
   background-color: #fff;
-  color: #d41443;
-  border: 1px solid #d41443;
+  color: #D41342;
+  border: 1px solid #D41342;
+}
+
+@media screen and (max-width: 768px) {
+  .location-block {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .location-wrapper {
+    justify-content: center;
+  }
 }
