@@ -1,6 +1,9 @@
 .hero {
   display: flex;
   background-color: $background-first;
+  padding-top: 193px;
+  padding-bottom: 160px;
+  overflow: hidden;
 }
 
 .hero-title {
@@ -12,6 +15,9 @@
   text-transform: uppercase;
   color: white;
   padding-bottom: 18px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    font-size: 22px;
+  }
   @media (min-width: 1199px) {
     font-size: 38px;
     text-transform: uppercase;
@@ -22,7 +28,6 @@
 }
 .hero-list {
   display: flex;
-  
 }
 .hero-number {
   display: none;
@@ -56,7 +61,28 @@
 .hero-button-item {
   display: flex;
 }
-.hero-button {
+.hero-button-red {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $axent;
+  color: white;
+  border: none;
+  border-radius: 22px;
+  padding: 7px 15px;
+
+  @media (min-width: 1199px) {
+    font-weight: 400;
+    font-size: 14px;
+
+    padding: 15px 36px;
+  }
+}
+.hero-button-white {
   font-family: 'DM Sans';
   font-weight: 400;
   font-size: 8px;
@@ -83,10 +109,25 @@
 }
 
 .hero-milk-text {
-  font-family: 'DM Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  letter-spacing: 0%;
-  color: white;
+  display: none;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: white;
+  }
+}
+.hero-image-milk {
+  display: none;
+}
+.hero-image-icecream {
+  z-index: 1;
+  position: absolute;
+  top: 80px;
+  right: 32px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+
+  }
 }
