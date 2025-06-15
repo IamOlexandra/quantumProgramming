@@ -1,6 +1,9 @@
 .hero {
   display: flex;
   background-color: $background-first;
+  padding-top: 193px;
+  padding-bottom: 160px;
+  overflow: hidden;
 }
 
 .hero-title {
@@ -66,7 +69,7 @@
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
-background-color: $axent;
+  background-color: $axent;
   color: white;
   border: none;
   border-radius: 22px;
@@ -106,10 +109,25 @@ background-color: $axent;
 }
 
 .hero-milk-text {
-  font-family: 'DM Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  letter-spacing: 0%;
-  color: white;
+  display: none;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: white;
+  }
+}
+.hero-image-milk {
+  display: none;
+}
+.hero-image-icecream {
+  z-index: 1;
+  position: absolute;
+  top: 80px;
+  right: 32px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+
+  }
 }
