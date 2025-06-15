@@ -264,6 +264,18 @@ a {
   top: 80px;
   right: 32px;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero-image-icecream {
+    right: 247px;
+    top: 63px;
+  }
+}
+@media (min-width: 1199px) {
+  .hero-image-icecream {
+    right: 450px;
+  }
+}
+
 .product-natural-title {
   margin-top: 121px;
   margin-bottom: 144px;
@@ -711,14 +723,11 @@ a {
 
 .gallery img {
   width: 100%;
-<<<<<<< HEAD
 }
 
 .gallery {
   background: linear-gradient(to bottom, #fff5f6 0%, #ffffff 100%);
   padding: 60px 0;
-=======
->>>>>>> 969ddf2269c9f15659bd179f9571e9819cb073fa
 }
 
 .reviwes {
@@ -873,10 +882,6 @@ a {
   fill: #c7133e;
 }
 
-.location {
-  font-family: "DM Sans", sans-serif;
-}
-
 .location-section {
   font-family: "DM Sans", sans-serif;
   background-color: #fff5f6;
@@ -1009,20 +1014,8 @@ a {
   background-color: #fff;
   color: #D41342;
   border: 1px solid #D41342;
-<<<<<<< HEAD
-=======
 }
 
-@media screen and (max-width: 768px) {
-  .location-block {
-    width: 100%;
-    max-width: 500px;
-  }
-  .location-wrapper {
-    justify-content: center;
-  }
->>>>>>> 969ddf2269c9f15659bd179f9571e9819cb073fa
-}
 .footer {
   font-family: "DM Sans", sans-serif;
   background-color: #fff5f6;
