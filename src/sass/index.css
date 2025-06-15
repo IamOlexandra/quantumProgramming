@@ -45,6 +45,13 @@ a {
   padding-top: 6px;
   padding-bottom: 137px;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header-logo {
+    padding-right: 64px;
+    padding-top: 37px;
+    padding-bottom: 15px;
+  }
+}
 @media (min-width: 1199px) {
   .header-logo {
     padding-right: 110px;
@@ -96,6 +103,10 @@ a {
     border: none;
     margin-left: 110px;
     margin-top: 38px;
+    background-image: url(../images/button-arrow.svg);
+    background-repeat: no-repeat;
+    background-position-x: 115px;
+    background-position-y: center;
   }
 }
 
@@ -117,6 +128,11 @@ a {
   text-transform: uppercase;
   color: white;
   padding-bottom: 18px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero-title {
+    font-size: 22px;
+  }
 }
 @media (min-width: 1199px) {
   .hero-title {
@@ -173,7 +189,29 @@ a {
   display: flex;
 }
 
-.hero-button {
+.hero-button-red {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #d41443;
+  color: white;
+  border: none;
+  border-radius: 22px;
+  padding: 7px 15px;
+}
+@media (min-width: 1199px) {
+  .hero-button-red {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 15px 36px;
+  }
+}
+
+.hero-button-white {
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 8px;
@@ -188,7 +226,7 @@ a {
   padding: 7px 15px;
 }
 @media (min-width: 1199px) {
-  .hero-button {
+  .hero-button-white {
     font-weight: 400;
     font-size: 14px;
     padding: 15px 36px;
@@ -209,6 +247,8 @@ a {
 }
 
 .product-natural-title {
+  margin-top: 121px;
+  margin-bottom: 144px;
   font-family: "Titan One";
   font-weight: 400;
   font-size: 18px;
@@ -217,6 +257,15 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: #ffb8ca;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .product-natural-title {
+    margin-top: 122px;
+    margin-bottom: 150px;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 @media (min-width: 1199px) {
   .product-natural-title {
@@ -229,7 +278,6 @@ a {
 
 .pink-text {
   color: #d41443;
-  margin-bottom: 31px;
   font-family: "Titan One";
   font-weight: 400;
   font-size: 34px;
@@ -277,18 +325,19 @@ a {
 
 .products-image {
   position: absolute;
-  top: -263px;
+  top: -150px;
   width: 249px;
   height: 252px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .products-image {
     width: 220px;
-    height: 226px;
+    height: 233px;
   }
 }
 @media (min-width: 1199px) {
   .products-image {
+    top: -263px;
     width: 335px;
     height: 335px;
   }
@@ -336,13 +385,37 @@ a {
 }
 
 .products-text {
+  margin-bottom: 30px;
   font-family: "DM Sans";
   font-weight: 700;
-  font-size: 16px;
-  line-height: 176%;
+  font-size: 14px;
+  line-height: 152%;
   letter-spacing: 4%;
   text-align: center;
   color: white;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .products-text {
+    line-height: 176%;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1199px) {
+  .products-text {
+    margin-bottom: 62px;
+    font-size: 16px;
+    line-height: 176%;
+  }
+}
+
+.product-btn {
+  background-image: url(../images/button-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 22px;
 }
 
 .cow {
