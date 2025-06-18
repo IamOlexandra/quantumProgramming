@@ -29,10 +29,9 @@
   }
 }
 .header-item {
-  padding-top: 50px;
+ padding-top: 50px;
 }
 .header-nav {
-  display: flex;
   align-items: center;
   gap: 30px;
 }
@@ -56,8 +55,6 @@
     padding: 7px 36px;
     border-radius: 22px;
     border: none;
-    margin-left: 110px;
-    margin-top: 38px;
     background-image: url(../images/button-arrow.svg);
     background-repeat: no-repeat;
     background-position-x: 115px;
