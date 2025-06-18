@@ -112,6 +112,7 @@ a {
 
 .hero {
   display: flex;
+  position: relative;
   background-color: #ffb8ca;
   padding-top: 193px;
   padding-bottom: 160px;
@@ -146,6 +147,7 @@ a {
 
 .hero-list {
   display: flex;
+  gap: 30px;
 }
 
 .hero-number {
@@ -170,6 +172,7 @@ a {
 }
 @media (min-width: 1199px) {
   .hero-text {
+    display: flex;
     font-family: "DM Sans";
     font-weight: 400;
     font-size: 14px;
