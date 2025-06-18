@@ -69,11 +69,9 @@ a {
   }
 }
 
-.header-item {
-  margin-top: 50px;
-}
-
 .header-nav {
+  height: 95px;
+  display: flex;
   align-items: center;
   gap: 30px;
 }
@@ -92,6 +90,7 @@ a {
 @media (min-width: 1199px) {
   .header-btn {
     display: flex;
+    align-self: flex-end;
     font-family: "DM Sans";
     font-weight: 700;
     font-size: 16px;
