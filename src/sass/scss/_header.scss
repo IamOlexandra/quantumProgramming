@@ -29,9 +29,10 @@
   }
 }
 .header-item {
-  padding-top: 50px;
+
 }
 .header-nav {
+  height: 95px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -48,6 +49,7 @@
 
   @media (min-width: 1199px) {
     display: flex;
+    align-self: flex-end;
     font-family: 'DM Sans';
     font-weight: 700;
     font-size: 16px;
@@ -56,8 +58,6 @@
     padding: 7px 36px;
     border-radius: 22px;
     border: none;
-    margin-left: 110px;
-    margin-top: 38px;
     background-image: url(../images/button-arrow.svg);
     background-repeat: no-repeat;
     background-position-x: 115px;

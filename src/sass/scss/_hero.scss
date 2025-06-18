@@ -1,5 +1,6 @@
 .hero {
   display: flex;
+  position: relative;
   background-color: $background-first;
   padding-top: 193px;
   padding-bottom: 160px;
@@ -28,6 +29,7 @@
 }
 .hero-list {
   display: flex;
+  gap: 30px;
 }
 .hero-number {
   display: none;
@@ -46,6 +48,7 @@
 .hero-text {
   display: none;
   @media (min-width: 1199px) {
+    display: flex;
     font-family: 'DM Sans';
     font-weight: 400;
     font-size: 14px;
