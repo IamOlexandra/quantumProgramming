@@ -5,14 +5,17 @@
   padding-top: 193px;
   padding-bottom: 160px;
   overflow: hidden;
-  background-image: url(../images/circle-hero.png);
+  background-image: url(../images/circle-tablet.png);
   background-repeat: no-repeat;
   background-position:right;
   @media (min-width: 768px) and (max-width: 1199px) {
-  background-size: 50%;
+ background-image: url(../images/circle-tablet.png);
+ background-repeat: no-repeat;
+ background-position: center;
   }
   @media (min-width: 1199px) {
-   background-size: 35%;
+   background-image: url(../images/circle-hero.png);
+   background-repeat: no-repeat;
    background-position: center;
   }
 }
@@ -163,8 +166,8 @@
   width: 171px;
   height: 410px;
   @media (min-width: 768px) and (max-width: 1199px) {
-    right: 247px;
-    top: 63px;
+    right: 50%;
+    transform: translateX(-50%);
     width: 143px;
     height: 336px;
   }
