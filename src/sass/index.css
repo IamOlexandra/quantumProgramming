@@ -725,7 +725,7 @@ a {
 }
 
 .gallery {
-  background: linear-gradient(to bottom, #fff5f6 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #fff5f6 40%, #ffffff 60%);
   padding: 60px 0;
 }
 
@@ -885,6 +885,9 @@ a {
   font-family: "DM Sans", sans-serif;
   background-color: #fff5f6;
   padding: 60px 0;
+  background: linear-gradient(to bottom, #fff5f6 20%, #ffffff 80%);
+  background-image: url("../images/locations-bg@2x.png");
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 768px) {
@@ -970,7 +973,7 @@ a {
 
 .workdays-hours,
 .weekend-hours {
-  color: #D41342;
+  color: #d41342;
   font-weight: 500;
   margin-bottom: 12px;
 }
@@ -1005,14 +1008,23 @@ a {
 }
 
 .btn-location {
-  background-color: #D41342;
+  align-items: center;
+  background-color: #d41342;
   color: #fff;
 }
 
 .btn-franchise {
+  align-items: center;
   background-color: #fff;
-  color: #D41342;
-  border: 1px solid #D41342;
+  color: #d41342;
+  border: 1px solid #d41342;
+}
+
+.locations-svg {
+  align-items: center;
+  width: 10px;
+  height: 15px;
+  fill: #bbb;
 }
 
 .footer {
@@ -1071,9 +1083,12 @@ a {
 }
 
 .footer-social-link {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fea5bb;
   border-radius: 50%;
 }
 
@@ -1098,6 +1113,12 @@ a {
   font-size: 12px;
   color: #888;
   margin-top: 40px;
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
   padding-top: 20px;
+}
+
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }/*# sourceMappingURL=index.css.map */

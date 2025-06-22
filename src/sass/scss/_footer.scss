@@ -54,9 +54,12 @@
 }
 
 .footer-social-link {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fea5bb;
   border-radius: 50%;
 }
 
@@ -81,6 +84,11 @@
   font-size: 12px;
   color: #888;
   margin-top: 40px;
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
   padding-top: 20px;
+}
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }

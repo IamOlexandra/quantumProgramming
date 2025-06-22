@@ -92,7 +92,7 @@
 
 .workdays-hours,
 .weekend-hours {
-  color: #D41342;
+  color: #d41342;
   font-weight: 500;
   margin-bottom: 12px;
 }
@@ -128,13 +128,21 @@
 }
 
 .btn-location {
-  background-color: #D41342;
+  align-items: center;
+  background-color: #d41342;
   color: #fff;
 }
 
 .btn-franchise {
+  align-items: center;
   background-color: #fff;
-  color: #D41342;
-  border: 1px solid #D41342;
+  color: #d41342;
+  border: 1px solid #d41342;
 }
 
+.locations-svg {
+  align-items: center;
+  width: 10px;
+  height: 15px;
+  fill: #bbb;
+}
