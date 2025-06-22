@@ -34,16 +34,17 @@ a {
 
 .header {
   display: flex;
-  background-color: #ffb8ca;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
   align-items: center; /* Центрирует элементы по вертикали */
   justify-content: space-between;
 }
 
 .header-logo {
   display: flex;
-  padding-right: 20px;
-  padding-top: 6px;
-  padding-bottom: 137px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .header-logo {
@@ -87,6 +88,26 @@ a {
 .header-btn {
   display: none;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header-btn {
+    display: flex;
+    align-self: flex-end;
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #d41443;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 34px;
+    background-image: url(../images/button-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
 @media (min-width: 1199px) {
   .header-btn {
     display: flex;
@@ -117,9 +138,28 @@ a {
   padding-top: 193px;
   padding-bottom: 160px;
   overflow: hidden;
+  background-image: url(../images/circle-tablet.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: url(../images/circle-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (min-width: 1199px) {
+  .hero {
+    background-image: url(../images/circle-hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .hero-title {
+  position: relative;
+  z-index: 1;
   font-family: "Titan One";
   font-weight: 400;
   font-size: 26px;
@@ -185,6 +225,8 @@ a {
 
 .hero-button-list {
   display: flex;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-button-item {
@@ -244,6 +286,18 @@ a {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero-milk-text {
+    display: flex;
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: white;
+  }
+}
+@media (min-width: 1199px) {
+  .hero-milk-text {
+    display: flex;
     font-family: "DM Sans";
     font-weight: 400;
     font-size: 14px;
@@ -256,22 +310,66 @@ a {
 .hero-image-milk {
   display: none;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero-image-milk {
+    display: flex;
+  }
+}
+@media (min-width: 1199px) {
+  .hero-image-milk {
+    display: flex;
+  }
+}
 
 .hero-image-icecream {
-  z-index: 1;
+  z-index: 0;
   position: absolute;
-  top: 80px;
+  bottom: 0;
   right: 32px;
+  width: 171px;
+  height: 410px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero-image-icecream {
-    right: 247px;
-    top: 63px;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 143px;
+    height: 336px;
   }
 }
 @media (min-width: 1199px) {
   .hero-image-icecream {
-    right: 450px;
+    right: 800px;
+    width: 236px;
+    height: 557px;
+  }
+}
+
+.milk-hero-btn {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .milk-hero-btn {
+    display: flex;
+    background-image: url(../images/button-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 62.4px;
+    height: 24px;
+    border: none;
+    border-radius: 22px;
+  }
+}
+@media (min-width: 1199px) {
+  .milk-hero-btn {
+    display: flex;
+    background-image: url(../images/button-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 22px;
   }
 }
 

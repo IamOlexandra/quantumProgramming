@@ -1,6 +1,10 @@
 .header {
   display: flex;
-  background-color: #ffb8ca;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
   align-items: center; /* Центрирует элементы по вертикали */
   justify-content: space-between;
 }
@@ -8,14 +12,11 @@
 }
 .header-logo {
   display: flex;
-  padding-right: 20px;
-  padding-top: 6px;
-  padding-bottom: 137px;
   @media (min-width: 768px) and (max-width: 1199px) {
     padding-right: 64px;
     padding-top: 37px;
     padding-bottom: 15px;
-}
+  }
   @media (min-width: 1199px) {
     padding-right: 110px;
     padding-top: 37px;
@@ -29,7 +30,6 @@
   }
 }
 .header-item {
-
 }
 .header-nav {
   height: 95px;
@@ -46,7 +46,25 @@
 }
 .header-btn {
   display: none;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    align-self: flex-end;
+    font-family: "DM Sans";
+font-weight: 700;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: $axent;
+border: none;
+border-radius: 22px;
+padding: 10px 34px;
+background-image: url(../images/button-arrow.svg);
+background-repeat: no-repeat;
+background-position: right;
 
+}
   @media (min-width: 1199px) {
     display: flex;
     align-self: flex-end;

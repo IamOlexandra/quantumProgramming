@@ -5,9 +5,24 @@
   padding-top: 193px;
   padding-bottom: 160px;
   overflow: hidden;
+  background-image: url(../images/circle-tablet.png);
+  background-repeat: no-repeat;
+  background-position:right;
+  @media (min-width: 768px) and (max-width: 1199px) {
+ background-image: url(../images/circle-tablet.png);
+ background-repeat: no-repeat;
+ background-position: center;
+  }
+  @media (min-width: 1199px) {
+   background-image: url(../images/circle-hero.png);
+   background-repeat: no-repeat;
+   background-position: center;
+  }
 }
 
 .hero-title {
+  position: relative;
+  z-index: 1;
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 26px;
@@ -60,6 +75,8 @@
 }
 .hero-button-list {
   display: flex;
+  position: relative;
+  z-index: 1;
 }
 .hero-button-item {
   display: flex;
@@ -114,6 +131,16 @@
 .hero-milk-text {
   display: none;
   @media (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: white;
+  }
+  @media (min-width: 1199px) {
+    display: flex;
     font-family: 'DM Sans';
     font-weight: 400;
     font-size: 14px;
@@ -124,17 +151,53 @@
 }
 .hero-image-milk {
   display: none;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+}
+  @media (min-width: 1199px) {
+    display: flex;
+  }
 }
 .hero-image-icecream {
-  z-index: 1;
+  z-index: 0;
   position: absolute;
-  top: 80px;
+  bottom: 0;
   right: 32px;
+  width: 171px;
+  height: 410px;
   @media (min-width: 768px) and (max-width: 1199px) {
-     right: 247px;
-     top: 63px;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 143px;
+    height: 336px;
   }
   @media (min-width: 1199px) {
-   right: 450px;
+    right: 800px;
+    width: 236px;
+    height: 557px;
+  }
 }
+.milk-hero-btn {
+  display: none;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    background-image: url(../images/button-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 62.4px;
+    height:24px;
+    border: none;
+    border-radius: 22px;
+  }
+  
+  @media (min-width: 1199px) {
+    display: flex;
+    background-image: url(../images/button-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 22px;
+  }
 }
