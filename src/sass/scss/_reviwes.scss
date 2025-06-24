@@ -129,10 +129,12 @@
     &:hover .reviwes-icon,
     &:focus .reviwes-icon {
       fill: $icons-hover;
+      outline: none;
     }
     &:hover .reviwes-home,
-    &:focus .reviwes-icon {
+    &:focus .reviwes-home {
       fill: $axent-hover;
+      outline: none;
     }
   }
 }

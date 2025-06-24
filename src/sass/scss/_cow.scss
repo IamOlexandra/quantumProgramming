@@ -145,6 +145,7 @@
     &:hover,
     &:focus {
       background-color: $main-hover;
+      outline: none;
     }
     @media (min-width: 768px) {
       margin-top: 62px;
@@ -217,4 +218,68 @@
       line-height: 176%;
     }
   }
+
+  &-modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    width: 310px;
+    height: 540px;
+    background-color: $main;
+    border-radius: 16px;
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+    padding: 50px 42px;
+    &-title {
+      font-size: 32px;
+      font-family: 'Titan One', sans-serif;
+      font-weight: 400;
+      letter-spacing: 4%;
+      color: $axent;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &-wrap {
+      height: 384px;
+      overflow-y: scroll;
+    }
+    &-text {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 162%;
+      color: $text-first;
+      margin-bottom: 17px;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-cross {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    &-icon {
+      width: 30px;
+      height: 30px;
+      transition: fill 300ms ease;
+    }
+    &-cross svg {
+      &:hover, &:focus {
+        fill: $axent;
+      }
+    }
+  }
+}
+.is-hidden {
+  display: none;
 }

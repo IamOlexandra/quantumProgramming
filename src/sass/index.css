@@ -724,6 +724,7 @@ a {
 }
 .cow-button:hover, .cow-button:focus {
   background-color: #ecebeb;
+  outline: none;
 }
 @media (min-width: 768px) {
   .cow-button {
@@ -816,6 +817,67 @@ a {
     font-size: 16px;
     line-height: 176%;
   }
+}
+.cow-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 310px;
+  height: 540px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  padding: 50px 42px;
+}
+.cow-modal-title {
+  font-size: 32px;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  letter-spacing: 4%;
+  color: #d41443;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cow-modal-wrap {
+  height: 384px;
+  overflow-y: scroll;
+}
+.cow-modal-text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #000;
+  margin-bottom: 17px;
+  width: 100%;
+}
+.cow-modal-text:last-child {
+  margin-bottom: 0;
+}
+.cow-modal-cross {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.cow-modal-icon {
+  width: 30px;
+  height: 30px;
+  transition: fill 300ms ease;
+}
+.cow-modal-cross svg:hover, .cow-modal-cross svg:focus {
+  fill: #d41443;
+}
+
+.is-hidden {
+  display: none;
 }
 
 .gallery img {
@@ -974,9 +1036,11 @@ a {
 }
 .reviwes-button:hover .reviwes-icon, .reviwes-button:focus .reviwes-icon {
   fill: #cdcdcd;
+  outline: none;
 }
-.reviwes-button:hover .reviwes-home, .reviwes-button:focus .reviwes-icon {
+.reviwes-button:hover .reviwes-home, .reviwes-button:focus .reviwes-home {
   fill: #c7133e;
+  outline: none;
 }
 
 .location-section {
