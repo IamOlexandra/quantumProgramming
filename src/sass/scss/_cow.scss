@@ -245,6 +245,8 @@
     &-wrap {
       height: 384px;
       overflow-y: scroll;
+      scrollbar-color: $subtitles $background-second;
+      scrollbar-width: thin;
     }
     &-text {
       font-family: 'DM Sans', sans-serif;
@@ -272,6 +274,7 @@
       width: 30px;
       height: 30px;
       transition: fill 300ms ease;
+      fill: $subtitles;
     }
     &-cross svg {
       &:hover, &:focus {

@@ -844,6 +844,8 @@ a {
 .cow-modal-wrap {
   height: 384px;
   overflow-y: scroll;
+  scrollbar-color: #ffa5ba #fff5f6;
+  scrollbar-width: thin;
 }
 .cow-modal-text {
   font-family: "DM Sans", sans-serif;
@@ -871,6 +873,7 @@ a {
   width: 30px;
   height: 30px;
   transition: fill 300ms ease;
+  fill: #ffa5ba;
 }
 .cow-modal-cross svg:hover, .cow-modal-cross svg:focus {
   fill: #d41443;
