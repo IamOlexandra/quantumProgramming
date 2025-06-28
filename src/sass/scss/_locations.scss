@@ -23,7 +23,6 @@
   display: flex;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -34,11 +33,17 @@
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(255, 165, 186, 0.25);
   padding: 40px 30px;
-  width: 330px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 482px;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 330px;
+  }
 }
 
 .location-type {
