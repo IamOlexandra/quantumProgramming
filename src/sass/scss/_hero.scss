@@ -1,28 +1,35 @@
 .hero {
   display: flex;
-  position: relative;
   background-color: $background-first;
   padding-top: 193px;
   padding-bottom: 160px;
   overflow: hidden;
   background-image: url(../images/circle-tablet.png);
+  background-size: 345px;
   background-repeat: no-repeat;
-  background-position:right;
-  @media (min-width: 768px) and (max-width: 1199px) {
- background-image: url(../images/circle-tablet.png);
- background-repeat: no-repeat;
- background-position: center;
+  background-position-x: 85%;
+  background-position-y: center;
+  @media (min-width: 768px) {
+    background-position-x: 65%;
+    background-size: 323px;
+    padding-top: 98px;
+    padding-bottom: 28px;
   }
   @media (min-width: 1199px) {
-   background-image: url(../images/circle-hero.png);
-   background-repeat: no-repeat;
-   background-position: center;
+    background-position-x: 55%;
+    background-size: 538px;
+    padding-top: 156px;
+    padding-bottom: 45px;
   }
+}
+.hero .container {
+  position: relative;
 }
 
 .hero-title {
   position: relative;
   z-index: 1;
+  display: block;
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 26px;
@@ -30,26 +37,49 @@
   letter-spacing: 4%;
   text-transform: uppercase;
   color: white;
-  padding-bottom: 18px;
-  @media (min-width: 768px) and (max-width: 1199px) {
+  margin-bottom: 18px;
+  width: 218px;
+  @media (min-width: 768px) {
     font-size: 22px;
+    width: 160px;
+    line-height: unset;
+    margin-bottom: 20px;
   }
   @media (min-width: 1199px) {
     font-size: 38px;
-    text-transform: uppercase;
+    width: 277px;
+    margin-bottom: 25px;
   }
 }
 .passion {
+  display: block;
   color: $axent;
+  font-size: 48px;
+  margin-top: -4px;
+  line-height: 100%;
+  @media (min-width: 768px) {
+    font-size: 34px;
+    margin-top: -1px;
+  }
+  @media (min-width: 1199px) {
+    font-size: 58px;
+  }
 }
 .hero-list {
+  position: absolute;
+  right: 26px;
+  top: 0;
   display: flex;
+  flex-direction: column;
+  align-items: end;
   gap: 30px;
 }
 .hero-number {
+  position: relative;
+  z-index: 1;
   display: none;
   @media (min-width: 1199px) {
-    display: flex;
+    display: block;
     font-family: 'Titan One';
     font-weight: 400;
     font-size: 46px;
@@ -59,11 +89,26 @@
     text-align: right;
     text-transform: uppercase;
   }
+  &::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -18px;
+    z-index: -1;
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: $main;
+    border-radius: 50%;
+    @media (min-width: 1199px) {
+      display: block;
+    }
+  }
 }
 .hero-text {
   display: none;
   @media (min-width: 1199px) {
-    display: flex;
+    display: block;
     font-family: 'DM Sans';
     font-weight: 400;
     font-size: 14px;
@@ -71,15 +116,17 @@
     letter-spacing: 0%;
     text-align: right;
     color: white;
+    text-align: right;
   }
 }
 .hero-button-list {
   display: flex;
   position: relative;
   z-index: 1;
-}
-.hero-button-item {
-  display: flex;
+  margin-bottom: 19px;
+  @media (min-width: 1199px) {
+    margin-bottom: 56px;
+  }
 }
 .hero-button-red {
   font-family: 'DM Sans';
@@ -94,12 +141,18 @@
   border: none;
   border-radius: 22px;
   padding: 7px 15px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 300ms ease;
 
   @media (min-width: 1199px) {
     font-weight: 400;
     font-size: 14px;
 
     padding: 15px 36px;
+  }
+  &:hover, &:focus {
+    background-color: $axent-hover;
   }
 }
 .hero-button-white {
@@ -115,6 +168,8 @@
   border: none;
   border-radius: 22px;
   padding: 7px 15px;
+  cursor: pointer;
+  transition: background-color 300ms ease;
 
   @media (min-width: 1199px) {
     font-weight: 400;
@@ -122,82 +177,110 @@
 
     padding: 15px 36px;
   }
+  &:hover, &:focus {
+    background-color: $main-hover;
+  }
 }
 
 .hero-image-girl {
   display: none;
+  @media (min-width: 768px) {
+    position: absolute;
+    right: 0;
+    bottom: -28px;
+    display: block;
+    width: 168px;
+    height: auto;
+  }
+  @media (min-width: 1199px) {
+    width: 293px;
+    height: auto;
+    bottom: -45px;
+  }
 }
 
+.hero-div-milk {
+  display: flex;
+  align-items: end;
+  width: 246px;
+  @media (min-width: 1199px) {
+    position: relative;
+    left: -38px;
+    width: 418px;
+  }
+}
 .hero-milk-text {
   display: none;
-  @media (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
+  @media (min-width: 768px) {
+    display: block;
     font-family: 'DM Sans';
     font-weight: 400;
     font-size: 8px;
     line-height: 150%;
     letter-spacing: 0%;
     color: white;
+    margin-bottom: 7px;
   }
   @media (min-width: 1199px) {
-    display: flex;
-    font-family: 'DM Sans';
-    font-weight: 400;
     font-size: 14px;
-    line-height: 140%;
-    letter-spacing: 0%;
-    color: white;
+    margin-bottom: 20px;
   }
 }
 .hero-image-milk {
   display: none;
-  @media (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
+  @media (min-width: 768px) {
+    display: block;
+    width: 124px;
+    height: auto;
 }
   @media (min-width: 1199px) {
-    display: flex;
+    width: 188px;
   }
 }
 .hero-image-icecream {
   z-index: 0;
   position: absolute;
-  bottom: 0;
+  bottom: -160px;
   right: 32px;
   width: 171px;
   height: 410px;
-  @media (min-width: 768px) and (max-width: 1199px) {
-    right: 50%;
-    transform: translateX(-50%);
+  @media (min-width: 768px) {
+    left: 356px;
+    bottom: -28px;
     width: 143px;
-    height: 336px;
+    height: auto;
   }
   @media (min-width: 1199px) {
-    right: 800px;
+    left: 479px;
+    bottom: -45px;
     width: 236px;
-    height: 557px;
+    height: auto;
   }
 }
 .milk-hero-btn {
   display: none;
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @media (min-width: 768px) {
     display: flex;
     background-image: url(../images/button-arrow.svg);
+    background-size: 4px;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 62.4px;
-    height:24px;
+    background-position-y: center;
+    background-position-x: 55%;
+    width: 18px;
+    height: 18px;
     border: none;
     border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 300ms ease;
   }
-  
+
   @media (min-width: 1199px) {
-    display: flex;
-    background-image: url(../images/button-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 22px;
+    width: 26px;
+    height: 26px;
+    background-position-x: 54%;
+    background-size: 6px;
+  }
+  &:hover, &:focus {
+    background-color: $main-hover;
   }
 }
