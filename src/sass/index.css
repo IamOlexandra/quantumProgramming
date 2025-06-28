@@ -133,33 +133,41 @@ a {
 
 .hero {
   display: flex;
-  position: relative;
   background-color: #ffb8ca;
   padding-top: 193px;
   padding-bottom: 160px;
   overflow: hidden;
   background-image: url(../images/circle-tablet.png);
+  background-size: 345px;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position-x: 85%;
+  background-position-y: center;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .hero {
-    background-image: url(../images/circle-tablet.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position-x: 65%;
+    background-size: 323px;
+    padding-top: 98px;
+    padding-bottom: 28px;
   }
 }
 @media (min-width: 1199px) {
   .hero {
-    background-image: url(../images/circle-hero.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position-x: 55%;
+    background-size: 538px;
+    padding-top: 156px;
+    padding-bottom: 45px;
   }
+}
+
+.hero .container {
+  position: relative;
 }
 
 .hero-title {
   position: relative;
   z-index: 1;
+  display: block;
   font-family: "Titan One";
   font-weight: 400;
   font-size: 26px;
@@ -167,35 +175,62 @@ a {
   letter-spacing: 4%;
   text-transform: uppercase;
   color: white;
-  padding-bottom: 18px;
+  margin-bottom: 18px;
+  width: 218px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .hero-title {
     font-size: 22px;
+    width: 160px;
+    line-height: unset;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 1199px) {
   .hero-title {
     font-size: 38px;
-    text-transform: uppercase;
+    width: 277px;
+    margin-bottom: 25px;
   }
 }
 
 .passion {
+  display: block;
   color: #d41443;
+  font-size: 48px;
+  margin-top: -4px;
+  line-height: 100%;
+}
+@media (min-width: 768px) {
+  .passion {
+    font-size: 34px;
+    margin-top: -1px;
+  }
+}
+@media (min-width: 1199px) {
+  .passion {
+    font-size: 58px;
+  }
 }
 
 .hero-list {
+  position: absolute;
+  right: 26px;
+  top: 0;
   display: flex;
+  flex-direction: column;
+  align-items: end;
   gap: 30px;
 }
 
 .hero-number {
+  position: relative;
+  z-index: 1;
   display: none;
 }
 @media (min-width: 1199px) {
   .hero-number {
-    display: flex;
+    display: block;
     font-family: "Titan One";
     font-weight: 400;
     font-size: 46px;
@@ -206,13 +241,30 @@ a {
     text-transform: uppercase;
   }
 }
+.hero-number::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: -18px;
+  z-index: 0;
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+@media (min-width: 1199px) {
+  .hero-number::after {
+    display: block;
+  }
+}
 
 .hero-text {
   display: none;
 }
 @media (min-width: 1199px) {
   .hero-text {
-    display: flex;
+    display: block;
     font-family: "DM Sans";
     font-weight: 400;
     font-size: 14px;
@@ -220,6 +272,7 @@ a {
     letter-spacing: 0%;
     text-align: right;
     color: white;
+    text-align: right;
   }
 }
 
@@ -227,10 +280,12 @@ a {
   display: flex;
   position: relative;
   z-index: 1;
+  margin-bottom: 19px;
 }
-
-.hero-button-item {
-  display: flex;
+@media (min-width: 1199px) {
+  .hero-button-list {
+    margin-bottom: 56px;
+  }
 }
 
 .hero-button-red {
@@ -246,6 +301,9 @@ a {
   border: none;
   border-radius: 22px;
   padding: 7px 15px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 300ms ease;
 }
 @media (min-width: 1199px) {
   .hero-button-red {
@@ -253,6 +311,9 @@ a {
     font-size: 14px;
     padding: 15px 36px;
   }
+}
+.hero-button-red:hover, .hero-button-red:focus {
+  background-color: #c7133e;
 }
 
 .hero-button-white {
@@ -268,6 +329,8 @@ a {
   border: none;
   border-radius: 22px;
   padding: 7px 15px;
+  cursor: pointer;
+  transition: background-color 300ms ease;
 }
 @media (min-width: 1199px) {
   .hero-button-white {
@@ -276,101 +339,136 @@ a {
     padding: 15px 36px;
   }
 }
+.hero-button-white:hover, .hero-button-white:focus {
+  background-color: #ecebeb;
+}
 
 .hero-image-girl {
   display: none;
+}
+@media (min-width: 768px) {
+  .hero-image-girl {
+    position: absolute;
+    right: 0;
+    bottom: -28px;
+    display: block;
+    width: 168px;
+    height: auto;
+  }
+}
+@media (min-width: 1199px) {
+  .hero-image-girl {
+    width: 293px;
+    height: auto;
+    bottom: -45px;
+  }
+}
+
+.hero-div-milk {
+  display: flex;
+  align-items: end;
+  width: 246px;
+}
+@media (min-width: 1199px) {
+  .hero-div-milk {
+    position: relative;
+    left: -38px;
+    width: 418px;
+  }
 }
 
 .hero-milk-text {
   display: none;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .hero-milk-text {
-    display: flex;
+    display: block;
     font-family: "DM Sans";
     font-weight: 400;
     font-size: 8px;
     line-height: 150%;
     letter-spacing: 0%;
     color: white;
+    margin-bottom: 7px;
   }
 }
 @media (min-width: 1199px) {
   .hero-milk-text {
-    display: flex;
-    font-family: "DM Sans";
-    font-weight: 400;
     font-size: 14px;
-    line-height: 140%;
-    letter-spacing: 0%;
-    color: white;
+    margin-bottom: 20px;
   }
 }
 
 .hero-image-milk {
   display: none;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .hero-image-milk {
-    display: flex;
+    display: block;
+    width: 124px;
+    height: auto;
   }
 }
 @media (min-width: 1199px) {
   .hero-image-milk {
-    display: flex;
+    width: 188px;
   }
 }
 
 .hero-image-icecream {
   z-index: 0;
   position: absolute;
-  bottom: 0;
+  bottom: -160px;
   right: 32px;
   width: 171px;
   height: 410px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .hero-image-icecream {
-    right: 50%;
-    transform: translateX(-50%);
+    left: 356px;
+    bottom: -28px;
     width: 143px;
-    height: 336px;
+    height: auto;
   }
 }
 @media (min-width: 1199px) {
   .hero-image-icecream {
-    right: 800px;
+    left: 479px;
+    bottom: -45px;
     width: 236px;
-    height: 557px;
+    height: auto;
   }
 }
 
 .milk-hero-btn {
   display: none;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .milk-hero-btn {
     display: flex;
     background-image: url(../images/button-arrow.svg);
+    background-size: 4px;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 62.4px;
-    height: 24px;
+    background-position-y: center;
+    background-position-x: 55%;
+    width: 18px;
+    height: 18px;
     border: none;
     border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 300ms ease;
   }
 }
 @media (min-width: 1199px) {
   .milk-hero-btn {
-    display: flex;
-    background-image: url(../images/button-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 22px;
+    width: 26px;
+    height: 26px;
+    background-position-x: 54%;
+    background-size: 6px;
   }
+}
+.milk-hero-btn:hover, .milk-hero-btn:focus {
+  background-color: #ecebeb;
 }
 
 .product-natural-title {
