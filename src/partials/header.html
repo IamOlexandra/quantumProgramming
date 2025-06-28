@@ -1,49 +1,60 @@
 <header class="header">
   <div class="container">
     <div class="header-container">
-    <a href="/" class="logo-link">
-      <img src="./images/logo.svg" alt="logo" class="header-logo" />
-    </a>
-    <div class="header-menu is-hidden" data-mob>
-      <div class="header-menu-place">
-        <button class="header-menu-btn" type="button">Buy now<span class="btn-span">></span></button>
-        <ul class="header-menu-list">
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="">Home</a>
+      <a href="/" class="logo-link">
+        <img src="./images/logo.svg" alt="logo" class="header-logo" />
+      </a>
+      <button class="burger-open" type="button"data-modal-open>
+        <img src="./images/Burger.png" alt="Open menu" />
+      </button>
+      <div class="header-menu is-hidden" data-modal>
+        <div class="header-menu-place">
+          <button class="header-menu-btn" type="button">
+            Buy now<span class="btn-span">></span>
+          </button>
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#">Home</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#">About us</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#">How it's made?</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#">Our products</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <button class="header-btn-menu-close" type="button" data-modal-close>
+            <img src="./images/close.png" alt="Close menu" />
+          </button>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item">
+            <a class="header-link" href="./index.html">Home</a>
           </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="">About us</a>
+          <li class="header-item">
+            <a class="header-link" href="#location">About us</a>
           </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="">How it's made?</a>
+          <li class="header-item">
+            <a class="header-link" href="#cow">How it’s made? </a>
           </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="">Our products</a>
+          <li class="header-item">
+            <a class="header-link" href="#products">Our products </a>
           </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href=""> Contact</a>
+          <li class="header-item">
+            <a class="header-link" href="#footer">Contact</a>
           </li>
         </ul>
-      <button class="header-btn-menu-close" type="button" data-mob-close>
-        <img src="./images/Burger.png" alt="burger" />
-      </button>
+        <button class="header-btn" type="button">Buy now</button>
+      </nav>
     </div>
   </div>
-    <nav class="header-nav">
-    <ul  class="header-list">
-      <li class="header-item"><a class="header-link" href="./index.html">Home</a></li>
-      <li class="header-item"><a class="header-link" href="#location">About us</a></li>
-      <li class="header-item">
-        <a class="header-link" href="#cow">How it’s made? </a>
-      </li>
-      <li class="header-item">
-        <a class="header-link" href="#products">Our products </a>
-      </li>
-      <li class="header-item"><a class="header-link" href="#footer">Contact</a></li>
-    </ul>
-    <button class="header-btn" type="button">Buy now</button>
-  </nav>
-</div>
-</div>
+  <script src="./index.js"></script>
 </header>
-</script>

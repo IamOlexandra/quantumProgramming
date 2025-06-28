@@ -49,22 +49,21 @@
   @media (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-self: flex-end;
-    font-family: "DM Sans";
-font-weight: 700;
-font-size: 16px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-color: $axent;
-border: none;
-border-radius: 22px;
-padding: 10px 34px;
-background-image: url(../images/button-arrow.svg);
-background-repeat: no-repeat;
-background-position: right;
-
-}
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: $axent;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 34px;
+    background-image: url(../images/button-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
   @media (min-width: 1199px) {
     display: flex;
     align-self: flex-end;
@@ -88,23 +87,95 @@ background-position: right;
 
 /*modal*/
 
-.header-menu {
+.burger-open {
+  padding: 20px 300px;
+  position: absolute;
+  background-color: transparent;
+  display: block;
+  border: none;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
 }
+
+.header-menu {
+  background-color: #e17992;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 1920px;
+  height: 1080px;
+  padding: 48px 40px;
+  z-index: 999;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    width: 319px;
+    height: 1080px;
+  }
+  @media (min-width: 1199px) {
+    display: none;
+}
+}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
 }
-.header-menu-place {
-}
+
 .header-menu-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #d41443;
+  padding: 13px 60px;
+  border-radius: 22px;
+  border: none;
+  margin-top: 60px;
+  margin-left: 25px;
 }
+
 .btn-span {
+  margin-left: 9px;
 }
+
 .header-menu-list {
+  margin-top: 19px;
 }
+
 .header-menu-item {
+  margin-bottom: 21px;
 }
+
 .header-menu-link {
+  margin-left: 21px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
 }
+
+.header-menu-link:hover {
+  color: #d41443;
+}
+
 .header-btn-menu-close {
+  color: white;
+  position: relative;
+  left: 300px;
+ bottom: 300px;
+width: 1px;
+height: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-open {
+    display: none;
+  }
 }
