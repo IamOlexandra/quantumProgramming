@@ -472,6 +472,8 @@ a {
 }
 
 .product-natural-title {
+  display: flex;
+  flex-direction: column;
   margin-top: 121px;
   margin-bottom: 144px;
   font-family: "Titan One";
@@ -503,6 +505,7 @@ a {
 
 .pink-text {
   color: #d41443;
+  margin-top: 15px;
   font-family: "Titan One";
   font-weight: 400;
   font-size: 34px;
@@ -523,7 +526,7 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-@media (min-width: 1199px) {
+@media (min-width: 768px) {
   .products-list {
     flex-direction: row;
   }
@@ -571,6 +574,9 @@ a {
 .products-item {
   position: relative;
   margin-bottom: 130px;
+  display: flex;
+  border-radius: 24px;
+  margin-right: 24px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .products-item {
@@ -584,12 +590,6 @@ a {
 
 .products-item:nth-child(3) {
   position: relative;
-}
-
-.products-item {
-  display: flex;
-  border-radius: 24px;
-  margin-right: 24px;
 }
 
 .products-title {
