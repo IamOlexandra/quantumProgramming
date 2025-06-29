@@ -19,34 +19,18 @@ function autoSlider() {
 
 window.addEventListener('load', function() {
   (() => {
-    const refs = {
+    const cowRefs = {
       openCowModalBtn: document.querySelector("[cow-modal-open]"),
       closeCowModalBtn: document.querySelector("[cow-modal-close]"),
       modal: document.querySelector("[cow-modal]"),
     };
   
-    refs.openCowModalBtn.addEventListener("click", toggleCowModal);
-    refs.closeCowModalBtn.addEventListener("click", toggleCowModal);
+    cowRefs.openCowModalBtn.addEventListener("click", toggleCowModal);
+    cowRefs.closeCowModalBtn.addEventListener("click", toggleCowModal);
   
     function toggleCowModal() {
-      refs.modal.classList.toggle("is-hidden");
+      cowRefs.modal.classList.toggle("is-hidden");
       /*document.body.classList.toggle("no-scroll");*/
     }
   })();
 });
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[header-modal-open]'),
-    closeModalBtn: document.querySelector('[header-modal-close]'),
-    modal: document.querySelector('[header-modal]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-    document.body.classList.toggle('no-scroll');
-  }
-})();
