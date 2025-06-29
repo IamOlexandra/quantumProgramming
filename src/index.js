@@ -19,17 +19,17 @@ function autoSlider() {
 
 window.addEventListener('load', function() {
   (() => {
-    const cowRefs = {
+    const refs = {
       openCowModalBtn: document.querySelector("[cow-modal-open]"),
       closeCowModalBtn: document.querySelector("[cow-modal-close]"),
       modal: document.querySelector("[cow-modal]"),
     };
   
-    cowRefs.openCowModalBtn.addEventListener("click", toggleCowModal);
-    cowRefs.closeCowModalBtn.addEventListener("click", toggleCowModal);
+    refs.openCowModalBtn.addEventListener("click", toggleCowModal);
+    refs.closeCowModalBtn.addEventListener("click", toggleCowModal);
   
     function toggleCowModal() {
-      cowRefs.modal.classList.toggle("is-hidden");
+      refs.modal.classList.toggle("is-hidden");
       /*document.body.classList.toggle("no-scroll");*/
     }
   })();
