@@ -1,0 +1,2 @@
+(()=>{let e={openModalBtn:document.querySelector("[header-modal-open]"),closeModalBtn:document.querySelector("[header-modal-close]"),modal:document.querySelector("[header-modal]")};function o(){e.modal.classList.toggle("is-hidden"),document.body.classList.toggle("no-scroll")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
+//# sourceMappingURL=quantumProgramming.a2df6ca9.js.map
